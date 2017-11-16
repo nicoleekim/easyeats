@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="macaroons" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-Hz-d3c">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="macrooooons copy" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-Hz-d3c">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -87,6 +87,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="macaroons" width="668" height="1002"/>
+        <image name="macrooooons copy" width="799" height="1214"/>
     </resources>
 </document>
