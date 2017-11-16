@@ -29,10 +29,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func searchButton(_ sender: Any) {
-        performSegue(withIdentifier: "segue", sender: self)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
         filterSearchController.maxPrice = Int(priceSlider.value)
