@@ -21,6 +21,7 @@ class FilteredSearch_ViewController: UIViewController {
         super.viewDidLoad()
         
         passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
+        
 
         // Do any additional setup after loading the view.
     }
