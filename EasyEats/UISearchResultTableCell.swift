@@ -9,7 +9,12 @@
 import UIKit
 
 class UISearchResultTableCell: UITableViewCell {
-
+    
+    //MARK: Properties
+    @IBOutlet weak var recipeImage: UIImageView!
+    @IBOutlet weak var recipeLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

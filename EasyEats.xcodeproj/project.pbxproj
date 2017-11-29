@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30EF2B131FCDDB4A00CD052A /* UISearchResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF2B121FCDDB4A00CD052A /* UISearchResultTableCell.swift */; };
 		30EF2B151FCDDB5800CD052A /* UISearchResultsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF2B141FCDDB5800CD052A /* UISearchResultsTable.swift */; };
+		BB6F289D1FCF65E500C433AD /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F289C1FCF65E500C433AD /* Recipe.swift */; };
 		BBE87CA11FB4CACD006D359B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CA01FB4CACD006D359B /* AppDelegate.swift */; };
 		BBE87CA31FB4CACD006D359B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CA21FB4CACD006D359B /* ViewController.swift */; };
 		BBE87CA61FB4CACD006D359B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE87CA41FB4CACD006D359B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		30EF2B121FCDDB4A00CD052A /* UISearchResultTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchResultTableCell.swift; sourceTree = "<group>"; };
 		30EF2B141FCDDB5800CD052A /* UISearchResultsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchResultsTable.swift; sourceTree = "<group>"; };
+		BB6F289C1FCF65E500C433AD /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BBE87C9D1FB4CACD006D359B /* EasyEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE87CA01FB4CACD006D359B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE87CA21FB4CACD006D359B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				BBE87CA01FB4CACD006D359B /* AppDelegate.swift */,
 				BBE87CA41FB4CACD006D359B /* Main.storyboard */,
 				BBE87CA21FB4CACD006D359B /* ViewController.swift */,
+				BB6F289C1FCF65E500C433AD /* Recipe.swift */,
 				BCECCEE11FBE25860038A730 /* FilteredSearch_ViewController.swift */,
 				BBE87CA71FB4CACD006D359B /* Assets.xcassets */,
 				BBE87CA91FB4CACD006D359B /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				BBE87CA31FB4CACD006D359B /* ViewController.swift in Sources */,
 				30EF2B151FCDDB5800CD052A /* UISearchResultsTable.swift in Sources */,
 				BBE87CA11FB4CACD006D359B /* AppDelegate.swift in Sources */,
+				BB6F289D1FCF65E500C433AD /* Recipe.swift in Sources */,
 				BCECCEE21FBE25860038A730 /* FilteredSearch_ViewController.swift in Sources */,
 				30EF2B131FCDDB4A00CD052A /* UISearchResultTableCell.swift in Sources */,
 			);
