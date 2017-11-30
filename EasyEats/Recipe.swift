@@ -19,12 +19,12 @@ class Recipe {
     var servings: Int
     var price: Float
     var ingredients: [String]
-    var instructions: String
-    var photo: UIImage?
+    var instructions: [String]
+    var photoURL: String
     
     //MARK: Initialization
     
-    init?(name: String, vegetarian: Bool, vegan: Bool, prepTime: Int, servings: Int, price: Float, ingredients: [String], instructions: String, photo: UIImage?) {
+    init?(name: String, vegetarian: Bool = false, vegan: Bool = false, prepTime: Int = 0, servings: Int = 0, price: Float = 0, ingredients: [String] = [], instructions: [String] = [], photoURL: String = "") {
         
         // The name must not be empty
         guard !name.isEmpty else {
@@ -33,15 +33,13 @@ class Recipe {
         
         // Initialize stored properties.
         self.name = name
-        self.vegetarian = false
-        self.vegan = false
-        self.prepTime = 0
-        self.servings = 0
-        self.price = 0
-        self.ingredients = []
-        self.instructions = ""
-        self.photo = photo
-        
-        
+        self.vegetarian = vegetarian
+        self.vegan = vegan
+        self.prepTime = prepTime
+        self.servings = servings
+        self.price = price
+        self.ingredients = ingredients
+        self.instructions = instructions
+        self.photoURL = photoURL
     }
 }
