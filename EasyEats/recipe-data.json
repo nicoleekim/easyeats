@@ -1,673 +1,268 @@
-{
-"recipes":
-[
-  {
-    "recipe-name":"Thai Cucumber Salad",
-      "vegan": true,
-      "vegetarian": true,
-      "prep-time": 15,
-      "servings": 6,
-      "price": 2.84,
-      "ingredients": [
-          {
-              "quantity": "1/3 cup",
-              "name": "rice vinegar",
-              "avg-price": 0.59
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "granulated sugar",
-              "avg-price": 0.10
-          },
-          {
-              "quantity": "1/2 tsp",
-              "name": "toasted sesame oil",
-              "avg-price": 0.06
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "red pepper flakes",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "2",
-              "name": "cucumbers",
-              "avg-price": 1.60
-          },
-          {
-              "quantity": "3",
-              "name": "green onions",
-              "avg-price": 0.25
-          },
-          {
-              "quantity": "1/4 cup",
-              "name": "chopped peanuts",
-              "avg-price": 0.19
-          }
-      ],
-      "instructions": [
-        "In a small bowl, combine the rice vinegar, sugar, sesame oil, red pepper flakes, and salt. Set the dressing aside to give it time to blend.",
-        "Peel and slice the cucumber using your favorite method. Place the sliced cucumbers in a large bowl.",
-        "Chop the peanuts into smaller pieces, if desired. Slice the green onions.",
-        "Add the dressing, peanuts, and green onions to the sliced cucumbers. Stir to combine. Serve immediately or refrigerate until ready to eat. Give the salad a brief stir before serving to redistribute the dressing and flavors."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2016/04/Thai-Cucumber-Salad-front.jpg"
-  },
-  {
-    "recipe-name":"Southwest Chicken Skillet",
-      "vegan": false,
-      "vegetarian": false,
-      "prep-time": 5,
-      "servings": 4,
-      "price": 6.76,
-      "ingredients": [
-          {
-              "quantity": "1 cup",
-              "name": "uncooked long grain white rice",
-              "avg-price": 0.59
-          },
-          {
-              "quantity": "1 cup",
-              "name": "salsa",
-              "avg-price": 0.65
-          },
-          {
-              "quantity": "1.5-2 cups",
-              "name": "precooked shredded chicken",
-              "avg-price": 3.50
-          },
-          {
-              "quantity": "15 oz can",
-              "name": "black beans",
-              "avg-price": 0.49
-          },
-          {
-              "quantity": "1 tbsp",
-              "name": "chili powder",
-              "avg-price": 0.30
-          },
-          {
-              "quantity": "1 and 3/4 cups",
-              "name": "chicken broth",
-              "avg-price": 0.23
-          },
-          {
-              "quantity": "1 cup",
-              "name": "shredded cheese",
-              "avg-price": 1.00
-          },
-          {
-              "quantity": "2-3",
-              "name": "green onions, sliced",
-              "avg-price": 0.26
-          }
-      ],
-      "instructions": [
-        "In a large skillet, combine the rice, salsa, chicken, black beans (drained), chili powder, and chicken broth. Stir until everything is evenly combined.",
-        "Place a tight fitting lid on the skillet, turn the heat on to high, and let the skillet come to a full boil. As soon as the skillet comes to a boil, turn the heat down to low and let it simmer for 15 minutes. Make sure it is simmering the entire time, turning the heat up slightly if needed (you should be able to hear it simmer quietly).",
-        "After 15 minutes, turn off the heat, and let it rest with the lid in place for 5 more minutes. Finally, remove the lid, and fluff the mixture with a fork. All of the liquid should be absorbed and the rice should be tender. Sprinkle 1 cup of shredded cheese over top, replace the lid, and let it sit for a few minutes, or until the cheese is melted. Meanwhile, slice the green onions. Sprinkle the green onions over the melted cheese and serve hot."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2014/05/Southwest-Chicken-Skillet-bowl.jpg"
-  },
-  {
-    "recipe-name":"Coconut Crusted Tofu with Sweet Chili Dipping Sauce",
-      "vegan": false,
-      "vegetarian": true,
-      "prep-time": 45,
-      "servings": 4,
-      "price": 8.69,
-      "ingredients": [
-          {
-              "quantity": "14 oz block",
-              "name": "extra firm tofu",
-              "avg-price": 1.99
-          },
-          {
-              "quantity": "1",
-              "name": "large egg",
-              "avg-price": 0.27
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "cornstarch",
-              "avg-price": 0.08
-          },
-          {
-              "quantity": "1 tbsp",
-              "name": "water",
-              "avg-price": 0.00
-          },
-          {
-              "quantity": "pinch",
-              "name": "salt and pepper",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "1 cup",
-              "name": "unsweetened coconut flakes",
-              "avg-price": 1.57
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "virgin coconut oil",
-              "avg-price": 0.05
-          },
-          {
-              "quantity": "3 oz",
-              "name": "sweet chili sauce",
-              "avg-price": 2.75
-          }
-      ],
-      "instructions": [
-        "Remove the tofu from the liquid filled package and place it between multiple layers of paper towel or a clean, lint-free dish towel. Place the wrapped tofu between two plates, cutting boards, or baking sheets and place something heavy on top (I use a kettle or pot full of water). Press the tofu for 30 minutes.",
-        "Once the tofu has been pressed, cut the block in half. Cut each piece into three 1/4-inch thick rectangles (cut the "thickness" of the block into three). Cut each rectangle into two triangles. You should now have 12 1/4-inch thick triangles.",
-        "Prepare two bowls for the coconut crust. In the first bowl whisk together the egg, cornstarch, water, and a pinch of salt and pepper until a smooth mixture forms. Place the unsweetened coconut in the second bowl.",
-        "Dip each tofu triangle into the egg mixture first, making sure it is fully coated, then into the coconut flakes. Place the coconut coated triangles on the cutting board until all pieces are coated.",
-        "Heat one tablespoon of the coconut oil in a large non-stick skillet over medium heat. Once the skillet and oil are hot, add half of the coconut coated tofu triangles and cook on each side until brown and crispy. Remove the cooked tofu to a paper towel lined plate, add more coconut oil, and cook the second batch.",
-        "Serve the crispy coconut crusted tofu with sweet chili sauce for dipping."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Crusted-Tofu-close.jpg"
-  },
-  {
-    "recipe-name":"Honey Sriracha Chicken Thighs",
-      "vegan": false,
-      "vegetarian": false,
-      "prep-time": 40,
-      "servings": 6,
-      "price": 7.29,
-      "ingredients": [
-          {
-              "quantity": "6",
-              "name": "boneless skinless chicken thighs",
-              "avg-price": 5.98
-          },
-          {
-              "quantity": "2 cloves",
-              "name": "garlic",
-              "avg-price": 0.16
-          },
-          {
-              "quantity": "1 inch",
-              "name": "fresh ginger",
-              "avg-price": 0.11
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "sriracha hot sauce"
-              "avg-price": 0.17
-          },
-          {
-              "quantity": "1 and 1/2 tbsp",
-              "name": "soy sauce",
-              "avg-price": 0.15
-          },
-          {
-              "quantity": "1 tbsp",
-              "name": "rice vinegar",
-              "avg-price": 0.11
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "honey",
-              "avg-price": 0.24
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "brown sugar",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "1 tbsp",
-              "name": "vegetable oil",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1/2 cup",
-              "name": "water",
-              "avg-price": 0.00
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "corn starch",
-              "avg-price": 0.12
-          },
-          {
-              "quantity": "1/4 bunch",
-              "name": "cilantro or green onions",
-              "avg-price": 0.20
-          }
-      ],
-      "instructions": [
-        "Mince the garlic and grate the ginger into a bowl. Add the sriracha, soy sauce, rice vinegar, honey, brown sugar, vegetable oil, and water. Stir to combine. Add the corn starch and stir until dissolved.",
-        "Add the chicken thighs to a large zip top bag or a shallow dish. Add half of the marinade/sauce mixture to the chicken and toss to coat (be sure to stir the sauce before adding it to the chicken. The garlic, ginger, and corn starch tend to settle to the bottom.) Refrigerate for 30 minutes. Save the unused portion of the marinade for later.",
-        "Preheat the oven to 400 degrees. Add the chicken and its marinade to a 8x8 inch casserole dish. Bake in the preheated oven for 30 minutes, basting the chicken with the juices half way through.",
-        "While the chicken is baking, add the second reserved marinade (the half that wasn't used with the chicken) to a small sauce pot. Bring it up to a simmer over medium heat while stirring. As soon as it reaches a simmer it will thicken into a nice glaze. Set the sauce aside.",
-        "When the chicken is finished baking, spread the thickened sauce over each piece of chicken. Add fresh cilantro or sliced green onions and serve."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2013/12/Sriracha-Chicken-Thighs-above.jpg"
-  },
-  {
-    "recipe-name":"Almond Apricot Biscotti",
-      "vegan": false,
-      "vegetarian": true,
-      "prep-time": 15,
-      "servings": 28,
-      "price": 3.57,
-      "ingredients": [
-          {
-              "quantity": "2 cups",
-              "name": "all-purpose flour",
-              "avg-price": 0.21
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "baking powder",
-              "avg-price": 0.04
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "salt",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1 cup",
-              "name": "sugar"
-              "avg-price": 0.32
-          },
-          {
-              "quantity": "4 tbsp",
-              "name": "butter, room temperature",
-              "avg-price": 0.44
-          },
-          {
-              "quantity": "2",
-              "name": "large eggs",
-              "avg-price": 0.54
-          },
-          {
-              "quantity": "1/2 tsp",
-              "name": "vanilla extract",
-              "avg-price": 0.42
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "almond extract",
-              "avg-price": 0.28
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "nutmeg",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1/3 cup",
-              "name": "sliced almonds",
-              "avg-price": 0.88
-          },
-          {
-              "quantity": "1/3 cup",
-              "name": "dried apricots (about 8 pieces)",
-              "avg-price": 0.40
-          }
-      ],
-      "instructions": [
-        "Preheat the oven to 350ºF. In a medium bowl, stir together the flour, baking powder, and salt until evenly mixed.",
-        "In a large bowl, beat together the sugar, butter, eggs, vanilla extract, almond extract, and nutmeg until the mixture is light and creamy in appearance.",
-        "Pour the dry ingredients into the bowl of wet ingredients and stir until a soft dough forms.",
-        "Chop the apricots into small pieces. Add the chopped apricots and sliced almonds to the bowl with the dough, then stir until they are mixed in. Save a few pieces of almond to press into the top of the biscotti.",
-        "Line a baking sheet with parchment paper. Divide the dough into two equal pieces, then shape each into a flattened log, about 3 inches wide and 12 inches long. Place the logs a few inches apart on the baking sheet. Press a few pieces of almonds into the top of the dough for decoration. Bake the biscotti logs for 35 minutes in the preheated oven, or just until the edges turn golden and the top has a few cracks.",
-        "Remove the biscotti from the oven, but don't turn it off. Let the biscotti cool for about five minutes, then carefully transfer them to a cutting board. Use a serrated knife to cut the biscotti, on an angle, into 3/4-inch wide slices. Place the slices on back on the baking sheet, cut sides up.",
-        "Bake the sliced biscotti for about five more minutes, then flip and bake for five minutes on the second side. Allow the biscotti to cool completely before serving or packing in an air-tight container."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2017/01/Almond-Apricot-Biscotti-front.jpg"
-  },
-  {
-    "recipe-name":"Mediterranean Tuna",
-      "vegan": false,
-      "vegetarian": false,
-      "prep-time": 10,
-      "servings": 4,
-      "price": 13.23,
-      "ingredients": [
-          {
-              "quantity": "2 tbsp",
-              "name": "olive oil",
-              "avg-price": 0.22
-          },
-          {
-              "quantity": "1 medium",
-              "name": "onion",
-              "avg-price": 0.49
-          },
-          {
-              "quantity": "1/2 tbsp",
-              "name": "minced garlic",
-              "avg-price": 0.10
-          },
-          {
-              "quantity": "4-5",
-              "name": "anchovy filets"
-              "avg-price": 0.65
-          },
-          {
-              "quantity": "1 28 oz can",
-              "name": "diced or crushed tomatoes",
-              "avg-price": 1.43
-          },
-          {
-              "quantity": "1/2 cup",
-              "name": "kalamata olives",
-              "avg-price":2.50
-          },
-          {
-              "quantity": "1/2 tbsp",
-              "name": "dried basil",
-              "avg-price": 0.15
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "crushed red pepper",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1/2 tsp",
-              "name": "salt",
-              "avg-price": 0.05
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "cracked black pepper",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "2",
-              "name": "medium squash (green, yellow)",
-              "avg-price": 1.79
-          },
-          {
-              "quantity": "12 oz",
-              "name": "tuna steaks",
-              "avg-price": 4.99
-          },
-          {
-              "quantity": "1/4 bunch",
-              "name": "fresh parsley",
-              "avg-price": 0.22
-          },
-          {
-              "quantity": "1/2 lb",
-              "name": "pasta",
-              "avg-price": 0.64
-          }
-      ],
-      "instructions": [
-        "Dice the onion and cook it in a large skillet along with the minced garlic, anchovy filets and olive oil. Cook until the onions are soft and transparent and the anchovies have dissolved.",
-        "Meanwhile, cut the squash into half rounds or quarters. Add the squash to the skillet and continue to saute until they are slightly softened.",
-        "Add the can of tomatoes, roughly chopped olives, basil, crushed red pepper, salt, and cracked black pepper. Stir to combine. Nestle the tuna steaks down into the sauce, place a lid on top and let simmer until the tuna is cooked through. The tuna will turn from mauve to white as it cooks. When it is completely white, it is done.",
-        "While the tuna is poaching in the sauce, cook the pasta according to the package directions (boil for 5-7 minutes or until al dente). When the pasta is finished, drain in a colander.",
-        "When the fish and pasta are finished cooking, gently lift the fish out of the skillet and then stir in the freshly chopped parsley and pasta. Serve the pasta with sauce and vegetables topped with a piece of tuna steak."
-      ],
-      "imageURL": "https://lh3.googleusercontent.com/-Vqh2rYX5lzk/Th4O24C5HeI/AAAAAAAADjo/fRZ5e2dmYDk/s800/Mediterranean%252520Tuna%252520close.jpg"
-  },
-  {
-    "recipe-name":"Microwave French Toast Mug",
-      "vegan": false,
-      "vegetarian": true,
-      "prep-time": 5,
-      "servings": 1,
-      "price": 0.84,
-      "ingredients": [
-          {
-              "quantity": "1 tsp",
-              "name": "butter",
-              "avg-price": 0.04
-          },
-          {
-              "quantity": "3 tbsp",
-              "name": "whole milk",
-              "avg-price": 0.07
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "maple syrup",
-              "avg-price": 0.11
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "cinnamon"
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "vanilla extract",
-              "avg-price": 0.21
-          },
-          {
-              "quantity": "1 pinch",
-              "name": "ground nutmeg",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "1",
-              "name": "large egg",
-              "avg-price": 0.27
-          },
-          {
-              "quantity": "1 cup",
-              "name": "bread pieces",
-              "avg-price": 0.10
-          }
-      ],
-      "instructions": [
-        "Place the butter in a large mug and microwave for 15-20 seconds, or until it is melted. Add the milk, maple syrup, cinnamon, vanilla, nutmeg, and the egg to the mug and whisk until everything is well mixed.",
-        "Add the bread pieces to the mug and gently stir until all the pieces are saturated with the egg and milk mixture. Be careful not to stir too roughly or the bread pieces may fall apart. Let the bread sit and absorb the liquid for about 1 minute.",
-        "Microwave the mug for 60-90 seconds, or until the mixture is solid. I have a 1250 watt microwave and find that 70-80 seconds is about perfect. You may need to experiment to find just the right cooking time for your microwave and mug size.",
-        "Serve immediately, or deck it out with your favorite toppings, like berries, nuts, or sliced bananas"
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2017/04/Microwave-French-Toast-Mug-V1.jpg"
-  },
-  {
-    "recipe-name":"Mango Coconut Chia Pudding",
-      "vegan": true,
-      "vegetarian": true,
-      "prep-time": 20,
-      "servings": 4,
-      "price": 4.79,
-      "ingredients": [
-          {
-              "quantity": "1/2 lb",
-              "name": "frozen mango chunks",
-              "avg-price": 1.65
-          },
-          {
-              "quantity": "13 oz can",
-              "name": "lite coconut milk",
-              "avg-price": 2.19
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "sugar",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "6 tbsp",
-              "name": "chia seeds"
-              "avg-price": 0.93
-          }
-      ],
-      "instructions": [
-        "If the mango chunks are in large pieces, chop them into smaller, 1/4-inch pieces. Place half of the mango chunks , the coconut milk, and sugar in a blender and process until smooth.",
-        "Divide the remaining mango chunks between 4 small containers (10-12oz. containers). Add 1.5 Tbsp of chia seeds to each container. Finally, pour the mango coconut milk mixture into the containers, dividing it evenly between all four.",
-        "Stir the contents of each container to make sure all the chia seeds have adequate exposure to the liquid. Place lids on the containers and refrigerate over night, or up to 4-5 days."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2017/05/Mango-Coconut-Chia-Pudding-V2.jpg"
-  },
-  {
-    "recipe-name":"Warm Brussel Sprouts and Pear Salad with Dijon Vinaigrette",
-      "vegan": true,
-      "vegetarian": true,
-      "prep-time": 10,
-      "servings": 4,
-      "price": 4.61,
-      "ingredients": [
-          {
-              "quantity": "1 small clove",
-              "name": "garlic",
-              "avg-price": 0.08
-          },
-          {
-              "quantity": "2 tbsp",
-              "name": "olive oil",
-              "avg-price": 0.22
-          },
-          {
-              "quantity": "1 tbsp",
-              "name": "apple cider vinegar",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "1/2 tbsp",
-              "name": "Dijon mustard"
-              "avg-price": 0.04
-          },
-          {
-              "quantity": "1/8 tsp",
-              "name": "salt",
-              "avg-price": 0.01
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "sugar",
-              "avg-price": 0.01
-          },
-          {
-              "quantity": "1 tsp",
-              "name": "freshly cracked pepper",
-              "avg-price": 0.08
-          },
-          {
-              "quantity": "10 oz",
-              "name": "Brussel sprouts",
-              "avg-price": 2.79
-          },
-          {
-              "quantity": "1/2 tbsp",
-              "name": "olive oil",
-              "avg-price": 0.06
-          },
-          {
-              "quantity": "1",
-              "name": "D'anjou pear",
-              "avg-price": 0.69
-          },
-          {
-              "quantity": "1/3 cup",
-              "name": "dried cranberries",
-              "avg-price": 0.60
-          },
-      ],
-      "instructions": [
-        "To make the vinaigrette, mince the garlic and add it to a small bowl with the olive oil, vinegar, Dijon, salt, sugar, and freshly cracked pepper. Whisk the ingredients together until the dressing becomes light and almost creamy in appearance. Set the dressing aside to allow the flavors to blend.",
-        "Place the dried cranberries in a small bowl and add very hot water. Let the cranberries soak for about five minutes, or until they soften slightly. Drain the cranberries and set them aside. Slice the pear into thin strips.",
-        "Heat a large skillet over medium heat. Add 1/2 Tbsp olive oil and tilt the pan until it is covered. Add the shredded Brussels sprouts and sauté them until they begin to soften, but are still bright green (about 5 minutes). Remove them from the heat and season with salt and pepper. They will continue to soften from the residual heat in the skillet.",
-        "Add the pear slices and cranberries to the wilted Brussels sprouts. Drizzle some of the dressing over the salad and toss to combine. Add more dressing as needed. Finish with a final pinch of freshly cracked pepper."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2016/11/Warm-Brussels-Sprouts-and-Pear-Salad-V.jpg"
-  },
-  {
-    "recipe-name":"Purple Power Bowls",
-      "vegan": true,
-      "vegetarian": true,
-      "prep-time": 30,
-      "servings": 5,
-      "price": 13.85,
-      "ingredients": [
-          {
-              "quantity": "1/3 cup",
-              "name": "tahini",
-              "avg-price": 1.13
-          },
-          {
-              "quantity": "1/3 cup",
-              "name": "water",
-              "avg-price": 0.00
-          },
-          {
-              "quantity": "1/4 cup",
-              "name": "lemon juice",
-              "avg-price": 0.18
-          },
-          {
-              "quantity": "1 clove",
-              "name": "garlic, crushed"
-              "avg-price": 0.08
-          },
-          {
-              "quantity": "1/2 tsp",
-              "name": "cumin",
-              "avg-price": 0.05
-          },
-          {
-              "quantity": "1/4 tsp",
-              "name": "cayenne pepper",
-              "avg-price": 0.03
-          },
-          {
-              "quantity": "1/2 tsp",
-              "name": "salt",
-              "avg-price": 0.02
-          },
-          {
-              "quantity": "2.5 cups",
-              "name": "cooked rice or other grain",
-              "avg-price": 0.87
-          },
-          {
-              "quantity": "15 oz can",
-              "name": "chickpeas",
-              "avg-price": 0.79
-          },
-          {
-              "quantity": "4 oz bag",
-              "name": "baby greens",
-              "avg-price": 1.99
-          },
-          {
-              "quantity": "2-3",
-              "name": "small beets",
-              "avg-price": 1.72
-          },
-          {
-              "quantity": "2",
-              "name": "zucchini",
-              "avg-price": 1.63
-          },
-          {
-              "quantity": "1",
-              "name": "small red cabbage",
-              "avg-price": 1.41
-          },
-          {
-              "quantity": "1",
-              "name": "avocado",
-              "avg-price": 1.25
-          },
-          {
-              "quantity": "1/2 cup",
-              "name": "pepitas",
-              "avg-price": 1.56
-          },
-          {
-              "quantity": "1/2 bunch",
-              "name": "green onion",
-              "avg-price": 0.35
-          }
-      ],
-      "instructions": [
-        "Prepare the dressing by placing all the ingredients in a blender and puréeing until smooth. If you don't have a blender, mince the garlic, then whisk the ingredients together in a bowl. Refrigerate the dressing until ready to use.",
-        "Cool the cooked rice, if needed. Drain the can of chickpeas. Wash the beets, zucchini, and carrots well. Use a food processor or large-holed cheese grater to shred the beets, zucchini, and carrots. Remove any wilted leaves from the cabbage, then cut into quarters, and remove the core. Shred the cabbage using a food processor, or slice thinly with a knife. Slice the avocado and green onion.",
-        "To build the bowls, place about 1/2 cup of the cooked rice in a bowl along with about 1/4 cup of chickpeas. Add a handful of baby greens, shredded beets, zucchini, carrots, and cabbage. Top with a few slices of avocado and a sprinkle of pepitas and sliced onion. Finally, drizzle the lemon tahini dressing liberally over the bowl, then eat."
-      ],
-      "imageURL": "https://www.budgetbytes.com/wp-content/uploads/2016/08/Purple-Power-Bowl-close.jpg"
-  },
- ]}
+
+{"recipe-data" :
+    [{"recipe-name":"Thai Cucumber Salad",
+     "vegan": true,
+     "vegetarian": true,
+     "prepTime": 15,
+     "servings": 6,
+     "price": 2.84,
+     "ingredients": ["1/3 cup of rice vinegar",
+                     "2 tbsp of granulated sugar",
+                     "1/2 tsp of toasted sesame oil",
+                     "1/4 tsp of red pepper flakes",
+                     "2 cucumbers",
+                     "3 green onions",
+                     "1/4 cup of chopped peanuts"
+                     ],
+     "instructions": [
+                      "In a small bowl, combine the rice vinegar, sugar, sesame oil, red pepper flakes, and salt. Set the dressing aside to give it time to blend.",
+                      "Peel and slice the cucumber using your favorite method. Place the sliced cucumbers in a large bowl.",
+                      "Chop the peanuts into smaller pieces, if desired. Slice the green onions.",
+                      "Add the dressing, peanuts, and green onions to the sliced cucumbers. Stir to combine. Serve immediately or refrigerate until ready to eat. Give the salad a brief stir before serving to redistribute the dressing and flavors."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2016/04/Thai-Cucumber-Salad-front.jpg"
+     },
+     {
+     "recipe-name":"Southwest Chicken Skillet",
+     "vegan": false,
+     "vegetarian": false,
+     "prepTime": 5,
+     "servings": 4,
+     "price": 6.76,
+     "ingredients": ["1 cup of uncooked long grain white rice",
+                     "1 cup of salsa",
+                     "1.5-2 cups of precooked shredded chicken",
+                     "15 oz can of black beans",
+                     "1 tbsp of chili powder",
+                     "1 and 3/4 cups of chicken broth",
+                     "1 cup of shredded cheese",
+                     "2-3 green onions sliced"
+                     ],
+     "instructions": [
+                      "In a large skillet, combine the rice, salsa, chicken, black beans (drained), chili powder, and chicken broth. Stir until everything is evenly combined.",
+                      "Place a tight fitting lid on the skillet, turn the heat on to high, and let the skillet come to a full boil. As soon as the skillet comes to a boil, turn the heat down to low and let it simmer for 15 minutes. Make sure it is simmering the entire time, turning the heat up slightly if needed (you should be able to hear it simmer quietly).",
+                      "After 15 minutes, turn off the heat, and let it rest with the lid in place for 5 more minutes. Finally, remove the lid, and fluff the mixture with a fork. All of the liquid should be absorbed and the rice should be tender. Sprinkle 1 cup of shredded cheese over top, replace the lid, and let it sit for a few minutes, or until the cheese is melted. Meanwhile, slice the green onions. Sprinkle the green onions over the melted cheese and serve hot."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2014/05/Southwest-Chicken-Skillet-bowl.jpg"
+     },
+     {
+     "recipe-name":"Coconut Crusted Tofu with Sweet Chili Dipping Sauce",
+     "vegan": false,
+     "vegetarian": true,
+     "prepTime": 45,
+     "servings": 4,
+     "price": 8.69,
+     "ingredients": ["14 oz block of extra firm tofu",
+                     "1 large egg",
+                     "2 tbsp of cornstarch",
+                     "1 tbsp of water",
+                     "A pinch of salt and pepper",
+                     "1 cup of unsweetened coconut flakes",
+                     "2 tbsp of virgin coconut oil",
+                     "3 oz of sweet chili sauce"
+                     ],
+     "instructions": [
+                      "Remove the tofu from the liquid filled package and place it between multiple layers of paper towel or a clean, lint-free dish towel. Place the wrapped tofu between two plates, cutting boards, or baking sheets and place something heavy on top (I use a kettle or pot full of water). Press the tofu for 30 minutes.",
+                      "Once the tofu has been pressed, cut the block in half. Cut each piece into three 1/4-inch thick rectangles (cut the thickness of the block into three). Cut each rectangle into two triangles. You should now have 12 1/4-inch thick triangles.",
+                      "Prepare two bowls for the coconut crust. In the first bowl whisk together the egg, cornstarch, water, and a pinch of salt and pepper until a smooth mixture forms. Place the unsweetened coconut in the second bowl.",
+                      "Dip each tofu triangle into the egg mixture first, making sure it is fully coated, then into the coconut flakes. Place the coconut coated triangles on the cutting board until all pieces are coated.",
+                      "Heat one tablespoon of the coconut oil in a large non-stick skillet over medium heat. Once the skillet and oil are hot, add half of the coconut coated tofu triangles and cook on each side until brown and crispy. Remove the cooked tofu to a paper towel lined plate, add more coconut oil, and cook the second batch.",
+                      "Serve the crispy coconut crusted tofu with sweet chili sauce for dipping."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Crusted-Tofu-close.jpg"
+     },
+     {
+     "recipe-name":"Honey Sriracha Chicken Thighs",
+     "vegan": false,
+     "vegetarian": false,
+     "prepTime": 40,
+     "servings": 6,
+     "price": 7.29,
+     "ingredients": ["6 boneless skinless chicken thighs",
+                     "2 cloves of garlic",
+                     "1 inch of fresh ginger",
+                     "2 tbsp of sriracha hot sauce",
+                     "1 and 1/2 tbsp of soy sauce",
+                     "1 tbsp of rice vinegar",
+                     "2 tbsp of honey",
+                     "2 tbsp of brown sugar",
+                     "1 tbsp of vegetable oil",
+                     "1/2 cup of water",
+                     "2 tbsp of corn starch",
+                     "1/4 bunch of cilantro or green onion"
+                     ],
+     "instructions": [
+                      "Mince the garlic and grate the ginger into a bowl. Add the sriracha, soy sauce, rice vinegar, honey, brown sugar, vegetable oil, and water. Stir to combine. Add the corn starch and stir until dissolved.",
+                      "Add the chicken thighs to a large zip top bag or a shallow dish. Add half of the marinade/sauce mixture to the chicken and toss to coat (be sure to stir the sauce before adding it to the chicken. The garlic, ginger, and corn starch tend to settle to the bottom.) Refrigerate for 30 minutes. Save the unused portion of the marinade for later.",
+                      "Preheat the oven to 400 degrees. Add the chicken and its marinade to a 8x8 inch casserole dish. Bake in the preheated oven for 30 minutes, basting the chicken with the juices half way through.",
+                      "While the chicken is baking, add the second reserved marinade (the half that wasn't used with the chicken) to a small sauce pot. Bring it up to a simmer over medium heat while stirring. As soon as it reaches a simmer it will thicken into a nice glaze. Set the sauce aside.",
+                      "When the chicken is finished baking, spread the thickened sauce over each piece of chicken. Add fresh cilantro or sliced green onions and serve."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2013/12/Sriracha-Chicken-Thighs-above.jpg"
+     },
+     {
+     "recipe-name":"Almond Apricot Biscotti",
+     "vegan": false,
+     "vegetarian": true,
+     "prepTime": 15,
+     "servings": 28,
+     "price": 3.57,
+     "ingredients": ["2 cups of all-purpose flour",
+                     "1 tsp of baking powder",
+                     "1/4 tsp of salt",
+                     "1 cup of sugar",
+                     "4 tbsp of butter at room temperature",
+                     "2 large eggs",
+                     "1/2 tsp of vanilla extract",
+                     "1 tsp of almond extract",
+                     "1/4 tsp of nutmeg",
+                     "1/3 cup of sliced almonds",
+                     "1/3 cup of dried apricots, about 8 pieces"
+                     ],
+     "instructions": [
+                      "Preheat the oven to 350ºF. In a medium bowl, stir together the flour, baking powder, and salt until evenly mixed.",
+                      "In a large bowl, beat together the sugar, butter, eggs, vanilla extract, almond extract, and nutmeg until the mixture is light and creamy in appearance.",
+                      "Pour the dry ingredients into the bowl of wet ingredients and stir until a soft dough forms.",
+                      "Chop the apricots into small pieces. Add the chopped apricots and sliced almonds to the bowl with the dough, then stir until they are mixed in. Save a few pieces of almond to press into the top of the biscotti.",
+                      "Line a baking sheet with parchment paper. Divide the dough into two equal pieces, then shape each into a flattened log, about 3 inches wide and 12 inches long. Place the logs a few inches apart on the baking sheet. Press a few pieces of almonds into the top of the dough for decoration. Bake the biscotti logs for 35 minutes in the preheated oven, or just until the edges turn golden and the top has a few cracks.",
+                      "Remove the biscotti from the oven, but don't turn it off. Let the biscotti cool for about five minutes, then carefully transfer them to a cutting board. Use a serrated knife to cut the biscotti, on an angle, into 3/4-inch wide slices. Place the slices on back on the baking sheet, cut sides up.",
+                      "Bake the sliced biscotti for about five more minutes, then flip and bake for five minutes on the second side. Allow the biscotti to cool completely before serving or packing in an air-tight container."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2017/01/Almond-Apricot-Biscotti-front.jpg"
+     },
+     {
+     "recipe-name":"Mediterranean Tuna Pasta",
+     "vegan": false,
+     "vegetarian": false,
+     "prepTime": 10,
+     "servings": 4,
+     "price": 13.23,
+     "ingredients": ["2 tbsp of olive oil",
+                     "1 medium onion",
+                     "1/2 tbsp of minced garlic",
+                     "4-5 anchovy filets",
+                     "1 28 oz. can of diced or crushed tomatoes",
+                     "1/2 cup of kalamata olives",
+                     "1/2 tbsp of dried basil",
+                     "1/4 tsp of crushed red pepper",
+                     "1/2 tsp of salt",
+                     "cracked black pepper",
+                     "2 medium squash (green, yellow)",
+                     "12 oz. tuna steaks",
+                     "1/4 bunch of fresh parsley",
+                     "1/2 lb pasta"
+                     ],
+     "instructions": [
+                      "Dice the onion and cook it in a large skillet along with the minced garlic, anchovy filets and olive oil. Cook until the onions are soft and transparent and the anchovies have dissolved.",
+                      "Meanwhile, cut the squash into half rounds or quarters. Add the squash to the skillet and continue to saute until they are slightly softened.",
+                      "Add the can of tomatoes, roughly chopped olives, basil, crushed red pepper, salt, and cracked black pepper. Stir to combine. Nestle the tuna steaks down into the sauce, place a lid on top and let simmer until the tuna is cooked through. The tuna will turn from mauve to white as it cooks. When it is completely white, it is done.",
+                      "While the tuna is poaching in the sauce, cook the pasta according to the package directions (boil for 5-7 minutes or until al dente). When the pasta is finished, drain in a colander.",
+                      "When the fish and pasta are finished cooking, gently lift the fish out of the skillet and then stir in the freshly chopped parsley and pasta. Serve the pasta with sauce and vegetables topped with a piece of tuna steak."
+                      ],
+     "photoURL": "https://lh3.googleusercontent.com/-Vqh2rYX5lzk/Th4O24C5HeI/AAAAAAAADjo/fRZ5e2dmYDk/s800/Mediterranean%252520Tuna%252520close.jpg"
+     },
+     {
+     "recipe-name":"Microwave French Toast Mug",
+     "vegan": false,
+     "vegetarian": true,
+     "prepTime": 5,
+     "servings": 1,
+     "price": 0.84,
+     "ingredients": ["1 tsp of butter",
+                     "3 tbsp whole milk",
+                     "1 tsp maple syrup",
+                     "1/4 tsp cinnamon",
+                     "1/4 tsp vanilla extract",
+                     "Pinch of ground nutmeg",
+                     "1 large egg",
+                     "1 cup of bread pieces"
+                     ],
+     "instructions": [
+                      "Place the butter in a large mug and microwave for 15-20 seconds, or until it is melted. Add the milk, maple syrup, cinnamon, vanilla, nutmeg, and the egg to the mug and whisk until everything is well mixed.",
+                      "Add the bread pieces to the mug and gently stir until all the pieces are saturated with the egg and milk mixture. Be careful not to stir too roughly or the bread pieces may fall apart. Let the bread sit and absorb the liquid for about 1 minute.",
+                      "Microwave the mug for 60-90 seconds, or until the mixture is solid. I have a 1250 watt microwave and find that 70-80 seconds is about perfect. You may need to experiment to find just the right cooking time for your microwave and mug size.",
+                      "Serve immediately, or deck it out with your favorite toppings, like berries, nuts, or sliced bananas"
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2017/04/Microwave-French-Toast-Mug-V1.jpg"
+     },
+     {
+     "recipe-name":"Mango Coconut Chia Pudding",
+     "vegan": true,
+     "vegetarian": true,
+     "prepTime": 20,
+     "servings": 4,
+     "price": 4.79,
+     "ingredients": ["1/2 lb frozen mango chunks",
+                     "13 oz can of lite cocnut milk",
+                     "1 tsp of sugar",
+                     "6 tbsp of chia seeds"
+                     ],
+     "instructions": [
+                      "If the mango chunks are in large pieces, chop them into smaller, 1/4-inch pieces. Place half of the mango chunks , the coconut milk, and sugar in a blender and process until smooth.",
+                      "Divide the remaining mango chunks between 4 small containers (10-12oz. containers). Add 1.5 Tbsp of chia seeds to each container. Finally, pour the mango coconut milk mixture into the containers, dividing it evenly between all four.",
+                      "Stir the contents of each container to make sure all the chia seeds have adequate exposure to the liquid. Place lids on the containers and refrigerate over night, or up to 4-5 days."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2017/05/Mango-Coconut-Chia-Pudding-V2.jpg"
+     },
+     {
+     "recipe-name":"Warm Brussel Sprouts and Pear Salad with Dijon Vinaigrette",
+     "vegan": true,
+     "vegetarian": true,
+     "prepTime": 10,
+     "servings": 4,
+     "price": 4.61,
+     "ingredients": ["1 small clove of garlic",
+                     "2 tbsp of olive oil",
+                     "1 tbsp of apple cider vinegar",
+                     "1/2 tbsp Dijon mustard",
+                     "1/8 tsp of salt",
+                     "1/4 tsp of sugar",
+                     "Freshly cracked pepper",
+                     "10 oz of shredded Brussel sprouts",
+                     "1/2 tbsp of olive oil",
+                     "1 D'anjou pear",
+                     "1/3 cup of dried cranberries",
+                     "Salt and pepper"
+                     ],
+     "instructions": [
+                      "To make the vinaigrette, mince the garlic and add it to a small bowl with the olive oil, vinegar, Dijon, salt, sugar, and freshly cracked pepper. Whisk the ingredients together until the dressing becomes light and almost creamy in appearance. Set the dressing aside to allow the flavors to blend.",
+                      "Place the dried cranberries in a small bowl and add very hot water. Let the cranberries soak for about five minutes, or until they soften slightly. Drain the cranberries and set them aside. Slice the pear into thin strips.",
+                      "Heat a large skillet over medium heat. Add 1/2 Tbsp olive oil and tilt the pan until it is covered. Add the shredded Brussels sprouts and sauté them until they begin to soften, but are still bright green (about 5 minutes). Remove them from the heat and season with salt and pepper. They will continue to soften from the residual heat in the skillet.",
+                      "Add the pear slices and cranberries to the wilted Brussels sprouts. Drizzle some of the dressing over the salad and toss to combine. Add more dressing as needed. Finish with a final pinch of freshly cracked pepper."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2016/11/Warm-Brussels-Sprouts-and-Pear-Salad-V.jpg"
+     },
+     {
+     "recipe-name":"Purple Power Bowls",
+     "vegan": true,
+     "vegetarian": true,
+     "prepTime": 30,
+     "servings": 5,
+     "price": 13.85,
+     "ingredients": ["1/3 cup of tahini",
+                     "1/3 cup of water",
+                     "1/4 cup of lemon juice",
+                     "1 clove of crushed garlic",
+                     "1/2 tsp of cumin",
+                     "1/4 tsp of cayenne pepper",
+                     "1/2 tsp of salt",
+                     "2.5 cups of cooked rice or other grain",
+                     "15 oz. can of chickpeas",
+                     "4 oz. bag of baby greens",
+                     "2-3 small beets",
+                     "2 zucchini",
+                     "3 carrots",
+                     "1 small red cabbage",
+                     "1 avocado",
+                     "1/2 bunch of green onion",
+                     "1/2 cup pepitas"
+                     ],
+     "instructions": [
+                      "Prepare the dressing by placing all the ingredients in a blender and puréeing until smooth. If you don't have a blender, mince the garlic, then whisk the ingredients together in a bowl. Refrigerate the dressing until ready to use.",
+                      "Cool the cooked rice, if needed. Drain the can of chickpeas. Wash the beets, zucchini, and carrots well. Use a food processor or large-holed cheese grater to shred the beets, zucchini, and carrots. Remove any wilted leaves from the cabbage, then cut into quarters, and remove the core. Shred the cabbage using a food processor, or slice thinly with a knife. Slice the avocado and green onion.",
+                      "To build the bowls, place about 1/2 cup of the cooked rice in a bowl along with about 1/4 cup of chickpeas. Add a handful of baby greens, shredded beets, zucchini, carrots, and cabbage. Top with a few slices of avocado and a sprinkle of pepitas and sliced onion. Finally, drizzle the lemon tahini dressing liberally over the bowl, then eat."
+                      ],
+     "photoURL": "https://www.budgetbytes.com/wp-content/uploads/2016/08/Purple-Power-Bowl-close.jpg"
+     }]
+}
+
