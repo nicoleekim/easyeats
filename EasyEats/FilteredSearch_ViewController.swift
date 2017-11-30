@@ -68,7 +68,11 @@ class FilteredSearch_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchResultsTable.dataSource = searchResultsTable
+        searchResultsTable.delegate = searchResultsTable
         searchResultsTable.loadSampleRecipes()
+        //searchResultsTable.reloadData()
+        //print(searchResultsTable.numberOfRows(inSection: 0))
         
         passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
         
