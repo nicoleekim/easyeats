@@ -15,6 +15,7 @@ class FilteredSearch_ViewController: UIViewController {
     var maxTime = Int()
     
     @IBOutlet weak var passingData: UILabel!
+    @IBOutlet weak var searchResultsTable: UISearchResultsTable!
     
     func uploadRecipeData() -> [Recipe] {
         var recipes: [Recipe] = []
@@ -45,7 +46,7 @@ class FilteredSearch_ViewController: UIViewController {
                 let price = tmp["price"] as? Float
                 let ingredients = tmp["ingredients"] as? [String]
                 let instructions = tmp["instructions"] as? [String]
-                let photoURL = tmp["imageURL"] as? String
+                let photoURL = tmp["imageURL"] as? UIImage
                 
                 let recipe = Recipe(name: name!,
                                     vegetarian: vegetarian!,
@@ -64,9 +65,10 @@ class FilteredSearch_ViewController: UIViewController {
         }
         return recipes
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchResultsTable.loadSampleRecipes()
         
         passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
         

@@ -10,12 +10,43 @@ import UIKit
 
 class UISearchResultsTable: UITableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var recipes = [Recipe]()
+    
+    override func numberOfRows(inSection section: Int) -> Int {
+        return recipes.count
     }
-    */
+    
+    
+    
+    override func cellForRow(at indexPath: IndexPath) -> UITableViewCell {
+        
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "ResultsTableViewCell"
+        
+        guard let cell = dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? UISearchResultTableCell  else {
+            fatalError("The dequeued cell is not an instance of UISearchResulTableCell.")
+        }
+        
+        // Fetches the appropriate meal for the data source layout.
+        let recipe = recipes[indexPath.row]
+        
+        cell.recipeLabel.text = recipe.name
+        cell.recipeImage.image! = recipe.photoURL
+        
+        return cell
+    }
+    
+    
+    func loadSampleRecipes() {
+        
+        let photo1 = UIImage(named: "Thai-Cucumber-Salad-front")
+        
+        guard let recipe1 = Recipe(name: "Thai Cucumber Salad", vegetarian: true, vegan: false, prepTime: 10, servings: 2, price: 5.50, ingredients: ["sjkfhfkjhf"], instructions: ["slfjdjksfhd"], photoURL: photo1) else {
+            fatalError("Unable to instantiate recipe1")
+        }
+        
+        recipes += [recipe1]
+    }
+
 
 }

@@ -164,7 +164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="cGf-P8-46Z" customClass="UISearchResultTableCell" customModule="EasyEats" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsTableViewCell" rowHeight="90" id="cGf-P8-46Z" customClass="UISearchResultTableCell" customModule="EasyEats" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cGf-P8-46Z" id="FdN-mp-bl5">
@@ -197,6 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="passingData" destination="6eK-ao-TRv" id="Rjj-zf-h5R"/>
+                        <outlet property="searchResultsTable" destination="snO-Ft-EEg" id="ffj-hS-bLt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eb-wr-Hf8" userLabel="First Responder" sceneMemberID="firstResponder"/>

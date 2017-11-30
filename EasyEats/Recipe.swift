@@ -20,11 +20,12 @@ class Recipe {
     var price: Float
     var ingredients: [String]
     var instructions: [String]
-    var photoURL: String
+    var photoURL: UIImage
+    
     
     //MARK: Initialization
     
-    init?(name: String, vegetarian: Bool = false, vegan: Bool = false, prepTime: Int = 0, servings: Int = 0, price: Float = 0, ingredients: [String] = [], instructions: [String] = [], photoURL: String = "") {
+    init?(name: String, vegetarian: Bool = false, vegan: Bool = false, prepTime: Int = 0, servings: Int = 0, price: Float = 0, ingredients: [String] = [], instructions: [String] = [], photoURL: UIImage?) {
         
         // The name must not be empty
         guard !name.isEmpty else {
@@ -40,6 +41,6 @@ class Recipe {
         self.price = price
         self.ingredients = ingredients
         self.instructions = instructions
-        self.photoURL = photoURL
+        self.photoURL = photoURL!
     }
 }
