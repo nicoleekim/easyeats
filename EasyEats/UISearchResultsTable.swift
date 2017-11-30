@@ -12,6 +12,7 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
     
     var recipes = [Recipe]()
     
+    //UITableViewDataSource Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
@@ -32,33 +33,13 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         
         return cell
     }
+    
+    //End datasource methods
+    
+    //Delegate methods
 
-//    
-//    
-//    override func numberOfRows(inSection section: Int) -> Int {
-//        return recipes.count
-//    }
-//    
-//    
     
-//    override func cellForRow(at indexPath: IndexPath) -> UITableViewCell {
-//
-//        // Table view cells are reused and should be dequeued using a cell identifier.
-//        let cellIdentifier = "ResultsTableViewCell"
-//
-//        guard let cell = dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? UISearchResultTableCell  else {
-//            fatalError("The dequeued cell is not an instance of UISearchResulTableCell.")
-//        }
-//
-//        // Fetches the appropriate meal for the data source layout.
-//        let recipe = recipes[indexPath.row]
-//
-//        cell.recipeLabel.text = recipe.name
-//        cell.recipeImage.image! = recipe.photoURL
-//
-//        return cell
-//    }
-    
+    //End delegate methods
     
     func loadSampleRecipes() {
         let photo1 = UIImage(named: "Thai-Cucumber-Salad-front")
