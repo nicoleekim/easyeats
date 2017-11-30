@@ -22,7 +22,35 @@ class FilteredSearch_ViewController: UIViewController {
         
         passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
         
-
+        let file = "recipe-data_3"
+//        if let path = Bundle.main.path(forResource: file, ofType: "json") {
+//            do {
+//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+//                let parseJSON = try JSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary {
+//
+//                }
+//                let jsonObj = try JSON(data: data)
+//                print("jsonData:\(jsonObj)")
+//            } catch let error {
+//                print("parse error: \(error.localizedDescription)")
+//            }
+//        } else {
+//            print("Invalid filename/path.")
+//        }
+        
+//        URL(fileURLWithPath: path)
+        
+        let path = Bundle.main.path(forResource: file, ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+            let data = try Data(contentsOf: url)
+            let recipes = try JSONDecoder().decode([String : [Int]].self, from: data)
+            print(recipes)
+        } catch {
+            print("ERROR")
+        }
+        
+        
         // Do any additional setup after loading the view.
     }
 

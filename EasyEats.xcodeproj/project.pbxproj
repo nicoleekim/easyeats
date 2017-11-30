@@ -17,6 +17,9 @@
 		BBE87CAB1FB4CACD006D359B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE87CA91FB4CACD006D359B /* LaunchScreen.storyboard */; };
 		BBE87CB61FB4CACE006D359B /* EasyEatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CB51FB4CACE006D359B /* EasyEatsTests.swift */; };
 		BBE87CC11FB4CACE006D359B /* EasyEatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CC01FB4CACE006D359B /* EasyEatsUITests.swift */; };
+		BC6179B21FCFBA6C004B20B2 /* recipe-data.json in Resources */ = {isa = PBXBuildFile; fileRef = BC6179B11FCFBA6C004B20B2 /* recipe-data.json */; };
+		BC6179B41FCFC239004B20B2 /* recipe-data_2.json in Resources */ = {isa = PBXBuildFile; fileRef = BC6179B31FCFC239004B20B2 /* recipe-data_2.json */; };
+		BC6179B61FCFC4D6004B20B2 /* recipe-data_3.json in Resources */ = {isa = PBXBuildFile; fileRef = BC6179B51FCFC4D6004B20B2 /* recipe-data_3.json */; };
 		BCECCEE21FBE25860038A730 /* FilteredSearch_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCECCEE11FBE25860038A730 /* FilteredSearch_ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		BBE87CBC1FB4CACE006D359B /* EasyEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE87CC01FB4CACE006D359B /* EasyEatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyEatsUITests.swift; sourceTree = "<group>"; };
 		BBE87CC21FB4CACE006D359B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6179B11FCFBA6C004B20B2 /* recipe-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recipe-data.json"; sourceTree = "<group>"; };
+		BC6179B31FCFC239004B20B2 /* recipe-data_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recipe-data_2.json"; sourceTree = "<group>"; };
+		BC6179B51FCFC4D6004B20B2 /* recipe-data_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recipe-data_3.json"; sourceTree = "<group>"; };
 		BCECCEE11FBE25860038A730 /* FilteredSearch_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredSearch_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +111,9 @@
 		BBE87C9F1FB4CACD006D359B /* EasyEats */ = {
 			isa = PBXGroup;
 			children = (
+				BC6179B51FCFC4D6004B20B2 /* recipe-data_3.json */,
+				BC6179B11FCFBA6C004B20B2 /* recipe-data.json */,
+				BC6179B31FCFC239004B20B2 /* recipe-data_2.json */,
 				BBE87CA01FB4CACD006D359B /* AppDelegate.swift */,
 				BBE87CA41FB4CACD006D359B /* Main.storyboard */,
 				BBE87CA21FB4CACD006D359B /* ViewController.swift */,
@@ -247,6 +256,9 @@
 				BBE87CAB1FB4CACD006D359B /* LaunchScreen.storyboard in Resources */,
 				BBE87CA81FB4CACD006D359B /* Assets.xcassets in Resources */,
 				BBE87CA61FB4CACD006D359B /* Main.storyboard in Resources */,
+				BC6179B41FCFC239004B20B2 /* recipe-data_2.json in Resources */,
+				BC6179B21FCFBA6C004B20B2 /* recipe-data.json in Resources */,
+				BC6179B61FCFC4D6004B20B2 /* recipe-data_3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
