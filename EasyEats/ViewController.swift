@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeOutlet: UILabel!
     
+    
     // Shows a text price value of slider to user
     @IBAction func priceChange(_ sender: Any) {
         priceOutlet.text = "Max Price: " + "$\(Int(priceSlider.value))"
@@ -29,10 +30,12 @@ class ViewController: UIViewController {
     }
     
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
         filterSearchController.maxPrice = Int(priceSlider.value)
         filterSearchController.maxTime = Int(timeSlider.value)
+        
     }
     
     override func viewDidLoad() {

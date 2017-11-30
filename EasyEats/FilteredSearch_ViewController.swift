@@ -31,8 +31,7 @@ class FilteredSearch_ViewController: UIViewController {
             let data = try Data(contentsOf: url)
             let jsonResult = try JSONSerialization.jsonObject(with: data, options:
                 JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-            
-            print("THIS IS WHERE IT'S FAILING")
+
             
             let jsonArray = jsonResult.value(forKey: "recipes") as! NSArray
             for json in jsonArray {
@@ -41,12 +40,12 @@ class FilteredSearch_ViewController: UIViewController {
                 let name = tmp["recipe-name"] as? String
                 let vegan = tmp["vegan"] as? Bool
                 let vegetarian = tmp["vegetarian"] as? Bool
-                let prep_time = tmp["prep_time"] as? Int
+                let prep_time = tmp["prepTime"] as? Int
                 let servings = tmp["servings"] as? Int
                 let price = tmp["price"] as? Float
                 let ingredients = tmp["ingredients"] as? [String]
                 let instructions = tmp["instructions"] as? [String]
-                let photoURL = tmp["imageURL"] as? UIImage
+                let photoURL = tmp["photoURL"] as? String
                 
                 let recipe = Recipe(name: name!,
                                     vegetarian: vegetarian!,
@@ -61,22 +60,22 @@ class FilteredSearch_ViewController: UIViewController {
                 recipes.append(recipe!)
             }
         } catch {
-            print("Fuck this")
+            print("Oh darn")
         }
+        searchResultsTable.recipes = recipes //set variable in searchResultsTable
         return recipes
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchResultsTable.dataSource = searchResultsTable
         searchResultsTable.delegate = searchResultsTable
-        searchResultsTable.loadSampleRecipes()
         //searchResultsTable.reloadData()
         //print(searchResultsTable.numberOfRows(inSection: 0))
         
         passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
         
-        let file = "recipe-data"
         
 ////         Trial 1
 //        if let path = Bundle.main.path(forResource: file, ofType: "json") {

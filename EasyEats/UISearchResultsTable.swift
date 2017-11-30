@@ -29,7 +29,9 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         let recipe = recipes[indexPath.row]
         
         cell.recipeLabel.text = recipe.name
-        cell.recipeImage.image! = recipe.photoURL
+        let url = URL(string: recipe.photoURL)
+        let data = try? Data(contentsOf: url!)
+        cell.recipeImage.image = UIImage(data: data!)
         
         return cell
     }
@@ -41,15 +43,20 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
     
     //End delegate methods
     
-    func loadSampleRecipes() {
-        let photo1 = UIImage(named: "Thai-Cucumber-Salad-front")
-        
-        guard let recipe1 = Recipe(name: "Thai Cucumber Salad", vegetarian: true, vegan: false, prepTime: 10, servings: 2, price: 5.50, ingredients: ["sjkfhfkjhf"], instructions: ["slfjdjksfhd"], photoURL: photo1) else {
-            fatalError("Unable to instantiate recipe1")
-        }
-        
-        recipes += [recipe1]
-    }
+    
+    //CATHY: don't think we need this function anymore?
+//    func loadSampleRecipes() {
+//
+//        let photo1 = "https://www.budgetbytes.com/wp-content/uploads/2016/04/Thai-Cucumber-Salad-front.jpg"
+//
+//        guard let recipe1 = Recipe(name: "Thai Cucumber Salad", vegetarian: true, vegan: false, prepTime: 10, servings: 2, price: 5.50, ingredients: ["sjkfhfkjhf"], instructions: ["slfjdjksfhd"], photoURL: photo1) else {
+//            fatalError("Unable to instantiate recipe1")
+//        }
+//
+//
+//       recipes += [recipe1]
+//
+//    }
 
 
 }
