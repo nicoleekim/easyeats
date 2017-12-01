@@ -19,11 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeOutlet: UILabel!
     
     @IBAction func viewAllButton(_ sender: UIButton) {
-//        priceSlider.value = priceSlider.maximumValue
-//        timeSlider.value = timeSlider.maximumValue
         self.performSegue(withIdentifier: "viewAll", sender: sender)
     }
-    
     // Shows a text price value of slider to user
     @IBAction func priceChange(_ sender: Any) {
         priceOutlet.text = "Max Price: " + "$\(Int(priceSlider.value))"
@@ -34,21 +31,14 @@ class ViewController: UIViewController {
         timeOutlet.text = "Max Time: " + "\(Int(timeSlider.value)) min"
     }
     
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
-        if segue.identifier == "viewAll" {
-            filterSearchController.maxPrice = Int(priceSlider.maximumValue)
-            filterSearchController.maxTime = Int(timeSlider.maximumValue)
-        } else {
-            filterSearchController.maxPrice = Int(priceSlider.value)
-            filterSearchController.maxTime = Int(timeSlider.value)
-        }
         
-        
-        
-        
+        // If viewAll button is clicked, pass max values
+        (filterSearchController.maxPrice, filterSearchController.maxTime) =
+            segue.identifier == "viewAll" ?
+            (Int(priceSlider.maximumValue), Int(timeSlider.maximumValue)) :
+            (Int(priceSlider.value), Int(timeSlider.value))
     }
     
     override func viewDidLoad() {
