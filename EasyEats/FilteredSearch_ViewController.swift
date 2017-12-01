@@ -75,7 +75,7 @@ class FilteredSearch_ViewController: UIViewController {
         //searchResultsTable.reloadData()
         //print(searchResultsTable.numberOfRows(inSection: 0))
         
-        passingData.text = "MaxPrice: " + "$\(maxPrice)" + " " + "MaxTime: " + "\(maxTime) min"
+        passingData.text = "MaxPrice: " + "$\(maxPrice)" + "\t" + "MaxTime: " + "\(maxTime) min"
         
         // Read JSON file
         let file_name = "recipe-data"

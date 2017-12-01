@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeOutlet: UILabel!
     
+    @IBAction func viewAllButton(_ sender: UIButton) {
+//        priceSlider.value = priceSlider.maximumValue
+//        timeSlider.value = timeSlider.maximumValue
+        self.performSegue(withIdentifier: "viewAll", sender: sender)
+    }
     
     // Shows a text price value of slider to user
     @IBAction func priceChange(_ sender: Any) {
@@ -33,8 +38,16 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
-        filterSearchController.maxPrice = Int(priceSlider.value)
-        filterSearchController.maxTime = Int(timeSlider.value)
+        if segue.identifier == "viewAll" {
+            filterSearchController.maxPrice = Int(priceSlider.maximumValue)
+            filterSearchController.maxTime = Int(timeSlider.maximumValue)
+        } else {
+            filterSearchController.maxPrice = Int(priceSlider.value)
+            filterSearchController.maxTime = Int(timeSlider.value)
+        }
+        
+        
+        
         
     }
     
