@@ -29,9 +29,10 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         let recipe = recipes[indexPath.row]
         
         cell.recipeLabel.text = recipe.name
-        let url = URL(string: recipe.photoURL)
-        let data = try? Data(contentsOf: url!)
-        cell.recipeImage.image = UIImage(data: data!)
+//        let url = URL(string: recipe.photoURL)
+//        let data = try? Data(contentsOf: url!)
+//        cell.recipeImage.image = UIImage(data: data!)
+        cell.recipeImage.image = UIImage(named: recipe.name)
         
         return cell
     }

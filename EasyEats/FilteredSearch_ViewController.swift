@@ -22,6 +22,9 @@ class FilteredSearch_ViewController: UIViewController {
     @IBOutlet weak var veganLabel: UILabel!
     @IBOutlet weak var vegetarianLabel: UILabel!
     
+    // Shows the users how many recipes were found
+    @IBOutlet weak var recipeFoundNum: UILabel!
+    
     @IBOutlet weak var searchResultsTable: UISearchResultsTable!
     
     // Filters based on price & time & vegan/vegetarian
@@ -88,7 +91,7 @@ class FilteredSearch_ViewController: UIViewController {
         
         // Show passed values to user
         maxPriceLabel.text = "Max Price: $\(maxPrice)"
-        maxTimeLabel.text = "Max Time: \(maxTime)"
+        maxTimeLabel.text = "Max Time: \(maxTime) min"
         veganLabel.textColor = isVegan ? UIColor.black : UIColor.lightGray
         veganLabel.text = isVegan ? "Vegan On" : "Vegan Off"
         vegetarianLabel.textColor = isVegetarian ? UIColor.black : UIColor.lightGray
@@ -101,6 +104,8 @@ class FilteredSearch_ViewController: UIViewController {
         // set variable in searchResultsTable
         searchResultsTable.recipes = recipes
         // print(recipes)
+        
+        recipeFoundNum.text = "Total: \(recipes.count)"
         
         // Do any additional setup after loading the view.
     }
