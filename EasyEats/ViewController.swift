@@ -41,15 +41,11 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
         
-        // If viewAll button is clicked, pass max values
-        (filterSearchController.maxPrice, filterSearchController.maxTime) =
+        // If viewAll button is clicked, pass max values and turn off vegan/vegetarian
+        (filterSearchController.maxPrice, filterSearchController.maxTime, filterSearchController.isVegan, filterSearchController.isVegetarian) =
             segue.identifier == "viewAll" ?
-            (Int(priceSlider.maximumValue), Int(timeSlider.maximumValue)) :
-            (Int(priceSlider.value), Int(timeSlider.value))
-        
-        // Pass vegan/vegetarian values
-        filterSearchController.isVegan = veganSwitch.isOn
-        filterSearchController.isVegetarian = vegetarianSwitch.isOn
+            (Int(priceSlider.maximumValue), Int(timeSlider.maximumValue), false, false) :
+            (Int(priceSlider.value), Int(timeSlider.value), veganSwitch.isOn, vegetarianSwitch.isOn)
     }
     
     override func viewDidLoad() {

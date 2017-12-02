@@ -25,8 +25,12 @@ class FilteredSearch_ViewController: UIViewController {
     @IBOutlet weak var searchResultsTable: UISearchResultsTable!
     
     // Filters based on price & time & vegan/vegetarian
+    // If vegan/vegetarian is turned off, do not care
     func simpleFilter(price: Float, time: Int, vegan: Bool, vegetarian: Bool) -> Bool {
-        return (price <= Float(maxPrice) && time <= maxTime)
+        return (price <= Float(maxPrice) &&
+            time <= maxTime &&
+            (!isVegan || (isVegan == vegan)) &&
+            (!isVegetarian || (isVegetarian == vegetarian)))
     }
     
     // Reads JSON file
