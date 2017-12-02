@@ -10,17 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Price
     @IBOutlet weak var priceSlider: UISlider!
-    
     @IBOutlet weak var priceOutlet: UILabel!
     
+    // Time
     @IBOutlet weak var timeSlider: UISlider!
-    
     @IBOutlet weak var timeOutlet: UILabel!
     
+    // Switches
+    @IBOutlet weak var veganSwitch: UISwitch!
+    @IBOutlet weak var vegetarianSwitch: UISwitch!
+    
+    // Trigger segue
     @IBAction func viewAllButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "viewAll", sender: sender)
     }
+    
     // Shows a text price value of slider to user
     @IBAction func priceChange(_ sender: Any) {
         priceOutlet.text = "Max Price: " + "$\(Int(priceSlider.value))"
@@ -31,6 +37,7 @@ class ViewController: UIViewController {
         timeOutlet.text = "Max Time: " + "\(Int(timeSlider.value)) min"
     }
     
+    // Sends data to Filtered Search
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filterSearchController = segue.destination as! FilteredSearch_ViewController
         
@@ -39,6 +46,10 @@ class ViewController: UIViewController {
             segue.identifier == "viewAll" ?
             (Int(priceSlider.maximumValue), Int(timeSlider.maximumValue)) :
             (Int(priceSlider.value), Int(timeSlider.value))
+        
+        // Pass vegan/vegetarian values
+        filterSearchController.isVegan = veganSwitch.isOn
+        filterSearchController.isVegetarian = vegetarianSwitch.isOn
     }
     
     override func viewDidLoad() {

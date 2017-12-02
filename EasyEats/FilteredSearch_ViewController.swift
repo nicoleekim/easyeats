@@ -10,20 +10,28 @@ import UIKit
 
 class FilteredSearch_ViewController: UIViewController {
     
+    // Values passed from search
     var maxPrice = Int()
     var maxTime = Int()
+    var isVegan = Bool()
+    var isVegetarian = Bool()
     
-    @IBOutlet weak var passingData: UILabel!
+    // Visualizations(labels) of the values passed from search
+    @IBOutlet weak var maxPriceLabel: UILabel!
+    @IBOutlet weak var maxTimeLabel: UILabel!
+    @IBOutlet weak var veganLabel: UILabel!
+    @IBOutlet weak var vegetarianLabel: UILabel!
+    
     @IBOutlet weak var searchResultsTable: UISearchResultsTable!
     
-    
-    func simpleFilter(price: Float, time: Int) -> Bool {
+    // Filters based on price & time & vegan/vegetarian
+    func simpleFilter(price: Float, time: Int, vegan: Bool, vegetarian: Bool) -> Bool {
         return (price <= Float(maxPrice) && time <= maxTime)
     }
     
+    // Reads JSON file
     func uploadRecipeData(file_name: String) -> [Recipe] {
         var recipes: [Recipe] = []
-
         let path = Bundle.main.path(forResource: file_name, ofType: "json")
         let url = URL(fileURLWithPath: path!)
 
@@ -31,7 +39,6 @@ class FilteredSearch_ViewController: UIViewController {
             let data = try Data(contentsOf: url)
             let jsonResult = try JSONSerialization.jsonObject(with: data, options:
                 JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-
             
             let jsonArray = jsonResult.value(forKey: "recipes") as! NSArray
             for json in jsonArray {
@@ -47,7 +54,7 @@ class FilteredSearch_ViewController: UIViewController {
                 let instructions = tmp["instructions"] as? [String]
                 let photoURL = tmp["photoURL"] as? String
                 
-                if simpleFilter(price: price!, time: prep_time!) {
+                if simpleFilter(price: price!, time: prep_time!, vegan: vegan!, vegetarian: vegetarian!) {
                     let recipe = Recipe(name: name!,
                                         vegetarian: vegetarian!,
                                         vegan: vegan!,
@@ -75,7 +82,13 @@ class FilteredSearch_ViewController: UIViewController {
         //searchResultsTable.reloadData()
         //print(searchResultsTable.numberOfRows(inSection: 0))
         
-        passingData.text = "MaxPrice: " + "$\(maxPrice)" + "\t" + "MaxTime: " + "\(maxTime) min"
+        // Show passed values to user
+        maxPriceLabel.text = "Max Price: $\(maxPrice)"
+        maxTimeLabel.text = "Max Time: \(maxTime)"
+        veganLabel.textColor = isVegan ? UIColor.black : UIColor.lightGray
+        veganLabel.text = isVegan ? "Vegan On" : "Vegan Off"
+        vegetarianLabel.textColor = isVegetarian ? UIColor.black : UIColor.lightGray
+        vegetarianLabel.text = isVegetarian ? "Vegetarian On" : "Vegetarian Off"
         
         // Read JSON file
         let file_name = "recipe-data"
@@ -83,7 +96,7 @@ class FilteredSearch_ViewController: UIViewController {
         
         // set variable in searchResultsTable
         searchResultsTable.recipes = recipes
-        print(recipes)
+        // print(recipes)
         
         // Do any additional setup after loading the view.
     }
