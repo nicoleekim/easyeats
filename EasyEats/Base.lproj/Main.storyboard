@@ -194,7 +194,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thai-Cucumber-Salad-front" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-N5-4rl">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thai Cucumber Salad" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-N5-4rl">
                                                     <rect key="frame" x="0.0" y="11" width="90" height="90"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -334,7 +334,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Thai-Cucumber-Salad-front" width="640" height="480"/>
         <image name="macrooooons copy" width="799" height="1214"/>
     </resources>
     <inferredMetricsTieBreakers>
