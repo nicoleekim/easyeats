@@ -13,6 +13,7 @@
 		BB6F289F1FD07E2D00C433AD /* RecipePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F289E1FD07E2D00C433AD /* RecipePage.swift */; };
 		BB6F28A11FD1FEF000C433AD /* RecipeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F28A01FD1FEF000C433AD /* RecipeInfoCell.swift */; };
 		BB6F28A31FD1FF7E00C433AD /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F28A21FD1FF7E00C433AD /* TextCell.swift */; };
+		BB6F28A61FD37FF500C433AD /* MyCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F28A51FD37FF500C433AD /* MyCellProtocol.swift */; };
 		BBE87CA11FB4CACD006D359B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CA01FB4CACD006D359B /* AppDelegate.swift */; };
 		BBE87CA31FB4CACD006D359B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE87CA21FB4CACD006D359B /* ViewController.swift */; };
 		BBE87CA61FB4CACD006D359B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE87CA41FB4CACD006D359B /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		BB6F289E1FD07E2D00C433AD /* RecipePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePage.swift; sourceTree = "<group>"; };
 		BB6F28A01FD1FEF000C433AD /* RecipeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoCell.swift; sourceTree = "<group>"; };
 		BB6F28A21FD1FF7E00C433AD /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		BB6F28A51FD37FF500C433AD /* MyCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellProtocol.swift; sourceTree = "<group>"; };
 		BBE87C9D1FB4CACD006D359B /* EasyEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE87CA01FB4CACD006D359B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE87CA21FB4CACD006D359B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				BBE87CA21FB4CACD006D359B /* ViewController.swift */,
 				BB6F289C1FCF65E500C433AD /* Recipe.swift */,
 				BCECCEE11FBE25860038A730 /* FilteredSearch_ViewController.swift */,
+				BB6F28A51FD37FF500C433AD /* MyCellProtocol.swift */,
 				BBE87CA71FB4CACD006D359B /* Assets.xcassets */,
 				30EF2B141FCDDB5800CD052A /* UISearchResultsTable.swift */,
 				BB6F28A41FD2010700C433AD /* CustomCells */,
@@ -299,6 +302,7 @@
 				BB6F28A31FD1FF7E00C433AD /* TextCell.swift in Sources */,
 				BB6F289D1FCF65E500C433AD /* Recipe.swift in Sources */,
 				BCECCEE21FBE25860038A730 /* FilteredSearch_ViewController.swift in Sources */,
+				BB6F28A61FD37FF500C433AD /* MyCellProtocol.swift in Sources */,
 				30EF2B131FCDDB4A00CD052A /* UISearchResultTableCell.swift in Sources */,
 				BB6F289F1FD07E2D00C433AD /* RecipePage.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FilteredSearch_ViewController: UIViewController {
+class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
     
     // Values passed from search
     var maxPrice = Int()
@@ -80,7 +80,7 @@ class FilteredSearch_ViewController: UIViewController {
         }
         return recipes
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,15 +105,37 @@ class FilteredSearch_ViewController: UIViewController {
         searchResultsTable.recipes = recipes
         // print(recipes)
         
+        //set celldelgate in every cell in table
+        setCellDelegate ()
+        
         recipeFoundNum.text = "Total: \(recipes.count)"
         
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setCellDelegate () {
+        let cells = searchResultsTable.visibleCells as! Array<UISearchResultTableCell>
+        
+        for cell in cells {
+            cell.cellDelegate = self
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
+    func didTapCell (tappedCell: UISearchResultTableCell) {
+        self.performSegue(withIdentifier: "goToRecipeSegue", sender: tappedCell);
+    }
+    
+    
     
 
     /*

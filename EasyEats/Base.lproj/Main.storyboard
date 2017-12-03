@@ -210,7 +210,7 @@
                                         <connections>
                                             <outlet property="recipeImage" destination="g1c-N5-4rl" id="JCa-bg-jDg"/>
                                             <outlet property="recipeLabel" destination="s46-M8-BBx" id="GQn-EX-tkb"/>
-                                            <segue destination="ccM-dK-VC1" kind="show" id="H4t-0x-v5N"/>
+                                            <segue destination="ccM-dK-VC1" kind="show" identifier="goToRecipeSegue" id="H4t-0x-v5N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -334,6 +334,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Thai Cucumber Salad" width="640" height="480"/>
         <image name="macrooooons copy" width="799" height="1214"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -10,6 +10,7 @@ import UIKit
 
 class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDelegate {
     
+    var cellDelegate: MyCellProtocol?
     var recipes = [Recipe]()
     
     //UITableViewDataSource Methods
@@ -27,7 +28,6 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         
         // Fetches the appropriate meal for the data source layout.
         let recipe = recipes[indexPath.row]
-        
         cell.recipeLabel.text = recipe.name
 //        let url = URL(string: recipe.photoURL)
 //        let data = try? Data(contentsOf: url!)

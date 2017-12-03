@@ -13,7 +13,7 @@ class UISearchResultTableCell: UITableViewCell {
     //MARK: Properties
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
-    
+    var cellDelegate: MyCellProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +24,10 @@ class UISearchResultTableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.cellDelegate?.didTapCell(tappedCell: self)
     }
 
 }
