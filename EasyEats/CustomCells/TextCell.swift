@@ -10,6 +10,7 @@ import UIKit
 
 class TextCell: UITableViewCell {
 
+    @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var textComponent: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

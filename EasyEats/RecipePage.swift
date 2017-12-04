@@ -56,6 +56,7 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath) as? TextCell  else {
                 fatalError("The dequeued cell is not an instance of TextCell.")
             }
+            
             //set cell data
             return cell
         }
@@ -63,6 +64,17 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath) as? TextCell  else {
                 fatalError("The dequeued cell is not an instance of TextCell.")
             }
+            
+            let ingredients = [String](passedRecipes!.ingredients)
+            var full_ingredients = "Ingredients:\n"
+            
+            for ingredient: String in ingredients {
+                let bulletPoint: String = "\u{2022}"
+                let formattedString: String = "\t\(bulletPoint) \(ingredient)\n"
+                full_ingredients += formattedString
+            }
+            cell.ingredientsLabel.text = full_ingredients
+            
             //set cell data
             return cell
         }

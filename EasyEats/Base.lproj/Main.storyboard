@@ -253,7 +253,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="You chose a max of: ">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="FISH&amp;CHIPS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -266,7 +266,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="With filters: ">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="FISH&amp;CHIPS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -302,7 +302,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Total:">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="FISH&amp;CHIPS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -434,8 +434,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CSD-A9-Lce" id="iZt-dK-IUd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="243.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNf-tR-sw0">
+                                            <rect key="frame" x="16" y="11" width="343" height="222"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <edgeInsets key="layoutMargins" top="20" left="8" bottom="8" right="8"/>
+                                <connections>
+                                    <outlet property="ingredientsLabel" destination="xNf-tR-sw0" id="9fc-dm-qMg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
