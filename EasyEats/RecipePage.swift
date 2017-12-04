@@ -97,8 +97,14 @@ class RecipePage: UITableViewController {
                 fatalError("The dequeued cell is not an instance of TextCell.")
             }
             // Instructions
+            let instructions = [String](passedRecipes!.instructions)
+            var full_instuctions = "Instructions\n"
             
-            cell.ingredientsLabel.text = "Hello World2"
+            for (index, instruction) in instructions.enumerated() {
+                full_instuctions += "\t\(index + 1). \(instruction)\n"
+            }
+            
+            cell.ingredientsLabel.text = full_instuctions
             
             //set cell data
             return cell
