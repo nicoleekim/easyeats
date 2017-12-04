@@ -11,7 +11,7 @@ import UIKit
 class RecipeInfoCell: UITableViewCell {
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeName: UILabel!
-    @IBOutlet weak var recipePrice: UILabel!
+    @IBOutlet weak var recipePriceandTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

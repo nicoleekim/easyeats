@@ -44,8 +44,12 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeInfoCell", for: indexPath) as? RecipeInfoCell  else {
                 fatalError("The dequeued cell is not an instance of RecipeInfoCell.")
             }
+            
+            let price = String(describing: passedRecipes!.price)
+            let time = String(describing: passedRecipes!.prepTime)
             cell.recipeName.text = passedRecipes?.name
             cell.recipeImage.image = UIImage(named: passedRecipes!.name)
+            cell.recipePriceandTime.text = "$\(price) recipe/\(time) minutes"
             return cell
         }
         else if indexPath.row == 1 {
