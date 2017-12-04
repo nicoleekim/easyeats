@@ -11,14 +11,7 @@ import UIKit
 class RecipePage: UITableViewController {
 
     let cellType = ""
-    
-    enum RecipeTableItemType {
-        case name //name and picture
-        case ingredients
-        case instructions
-        case info
-    }
-    
+    var passedRecipes = Recipe(name: "", photoURL: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +44,8 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeInfoCell", for: indexPath) as? RecipeInfoCell  else {
                 fatalError("The dequeued cell is not an instance of RecipeInfoCell.")
             }
-            //set cell data
+            cell.recipeName.text = passedRecipes?.name
+            cell.recipeImage.image = UIImage(named: passedRecipes!.name)
             return cell
         }
         else if indexPath.row == 1 {

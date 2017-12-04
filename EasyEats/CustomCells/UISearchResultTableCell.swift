@@ -14,6 +14,7 @@ class UISearchResultTableCell: UITableViewCell {
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
     var cellDelegate: MyCellProtocol?
+    var pathHolder: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()

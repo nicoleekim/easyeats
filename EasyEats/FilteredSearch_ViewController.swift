@@ -10,6 +10,9 @@ import UIKit
 
 class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
     
+    //testing to use in other methods
+    var recipeHolder = [Recipe]()
+    
     // Values passed from search
     var maxPrice = Int()
     var maxTime = Int()
@@ -27,6 +30,7 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
     
     @IBOutlet weak var searchResultsTable: UISearchResultsTable!
     
+
     // Filters based on price & time & vegan/vegetarian
     // If vegan/vegetarian is turned off, do not care
     func simpleFilter(price: Float, time: Int, vegan: Bool, vegetarian: Bool) -> Bool {
@@ -103,6 +107,9 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
         
         // set variable in searchResultsTable
         searchResultsTable.recipes = recipes
+        
+        //set variable as global
+        recipeHolder = recipes
         // print(recipes)
         
         //set celldelgate in every cell in table
@@ -128,7 +135,11 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cellHolder = sender as? UISearchResultTableCell
+        let recipe = recipeHolder[(cellHolder?.pathHolder)!]
         
+        let destinationVC = segue.destination as! RecipePage
+        destinationVC.passedRecipes = recipe
     }
     
     func didTapCell (tappedCell: UISearchResultTableCell) {
