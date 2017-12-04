@@ -56,6 +56,20 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath) as? TextCell  else {
                 fatalError("The dequeued cell is not an instance of TextCell.")
             }
+            let isVegan = Bool(passedRecipes!.vegan)
+            let isVegetarian = Bool(passedRecipes!.vegetarian)
+            let servings = Int(passedRecipes!.servings)
+            
+            var fullBasicInfo = ""
+            if (isVegan || isVegetarian) {
+                fullBasicInfo = "Special: "
+                fullBasicInfo += isVegan ? "Vegan " : ""
+                fullBasicInfo += isVegetarian ? "Vegetarian\n" : "\n"
+            }
+            fullBasicInfo += "Servings: \(servings)"
+            
+            // Basic info (vegan, vegetarian, preptime, servings, price)
+            cell.ingredientsLabel.text = fullBasicInfo
             
             //set cell data
             return cell
@@ -82,6 +96,10 @@ class RecipePage: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "TextCell", for: indexPath) as? TextCell  else {
                 fatalError("The dequeued cell is not an instance of TextCell.")
             }
+            // Instructions
+            
+            cell.ingredientsLabel.text = "Hello World2"
+            
             //set cell data
             return cell
         }
