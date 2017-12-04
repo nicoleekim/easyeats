@@ -13,6 +13,8 @@ class UISearchResultTableCell: UITableViewCell {
     //MARK: Properties
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
+    @IBOutlet weak var recipePrice: UILabel!
+    
     var cellDelegate: MyCellProtocol?
     var pathHolder: Int = 0
     

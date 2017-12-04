@@ -29,11 +29,12 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         // Fetches the appropriate meal for the data source layout.
         let recipe = recipes[indexPath.row]
         cell.pathHolder = indexPath.row
-        cell.recipeLabel.text = recipe.name
-//        let url = URL(string: recipe.photoURL)
-//        let data = try? Data(contentsOf: url!)
-//        cell.recipeImage.image = UIImage(data: data!)
+        //it doesn't even show up here what the heck
+        cell.recipeLabel.text = recipe.name + "\n" + String(recipe.price)
         cell.recipeImage.image = UIImage(named: recipe.name)
+        //even this line doesn't work when you just add a static value!
+        //cell.recipePrice.text = "3.8"
+        cell.recipePrice.text = String(recipe.price)
         
         return cell
     }
@@ -45,20 +46,5 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
     
     //End delegate methods
     
-    
-    //CATHY: don't think we need this function anymore?
-//    func loadSampleRecipes() {
-//
-//        let photo1 = "https://www.budgetbytes.com/wp-content/uploads/2016/04/Thai-Cucumber-Salad-front.jpg"
-//
-//        guard let recipe1 = Recipe(name: "Thai Cucumber Salad", vegetarian: true, vegan: false, prepTime: 10, servings: 2, price: 5.50, ingredients: ["sjkfhfkjhf"], instructions: ["slfjdjksfhd"], photoURL: photo1) else {
-//            fatalError("Unable to instantiate recipe1")
-//        }
-//
-//
-//       recipes += [recipe1]
-//
-//    }
-
 
 }
