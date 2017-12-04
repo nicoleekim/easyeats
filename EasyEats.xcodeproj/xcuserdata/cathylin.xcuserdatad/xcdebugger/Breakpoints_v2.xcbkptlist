@@ -2,4 +2,84 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EasyEats/CustomCells/TextCell.swift"
+            timestampString = "534063717.783513"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "TextCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyEats.TextCell.textComponent.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "EasyEats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cathylin/Documents/Software%20Engineering/easyeats/EasyEats/CustomCells/TextCell.swift"
+                  timestampString = "534071186.393958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyEats.TextCell.textComponent.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "EasyEats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cathylin/Documents/Software%20Engineering/easyeats/EasyEats/CustomCells/TextCell.swift"
+                  timestampString = "534071186.395728"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyEats.TextCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; EasyEats.TextCell"
+                  moduleName = "EasyEats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cathylin/Documents/Software%20Engineering/easyeats/EasyEats/CustomCells/TextCell.swift"
+                  timestampString = "534071186.397721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyEats.TextCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;EasyEats.TextCell&gt;"
+                  moduleName = "EasyEats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cathylin/Documents/Software%20Engineering/easyeats/EasyEats/CustomCells/TextCell.swift"
+                  timestampString = "534071186.400508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

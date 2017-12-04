@@ -94,8 +94,8 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
         //print(searchResultsTable.numberOfRows(inSection: 0))
         
         // Show passed values to user
-        maxPriceLabel.text = "Max Price: $\(maxPrice)"
-        maxTimeLabel.text = "Max Time: \(maxTime) min"
+        maxPriceLabel.text = "$\(maxPrice)"
+        maxTimeLabel.text = "\(maxTime) min"
         veganLabel.textColor = isVegan ? UIColor.black : UIColor.lightGray
         veganLabel.text = isVegan ? "Vegan On" : "Vegan Off"
         vegetarianLabel.textColor = isVegetarian ? UIColor.black : UIColor.lightGray
@@ -115,7 +115,7 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
         //set celldelgate in every cell in table
         setCellDelegate ()
         
-        recipeFoundNum.text = "Total: \(recipes.count)"
+        recipeFoundNum.text = "\(recipes.count)"
         
         // Do any additional setup after loading the view.
     }

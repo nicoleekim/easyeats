@@ -29,13 +29,16 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         // Fetches the appropriate meal for the data source layout.
         let recipe = recipes[indexPath.row]
         cell.pathHolder = indexPath.row
-        //it doesn't even show up here what the heck
-        cell.recipeLabel.text = recipe.name + "\n" + String(recipe.price)
-        cell.recipeImage.image = UIImage(named: recipe.name)
-        //even this line doesn't work when you just add a static value!
-        //cell.recipePrice.text = "3.8"
-        cell.recipePrice.text = String(recipe.price)
+        cell.recipeLabel.text = recipe.name
         
+        let url = URL(string: recipe.photoURL)
+        let data = try? Data(contentsOf: url!)
+        cell.recipeImage.image = UIImage(data: data!)
+        
+        
+        //cell.recipeImage.image = UIImage(named: recipe.name)
+        cell.recipePrice.text = "Cost: $\(recipe.price)"
+        cell.recipeTime.text = "Prep time: \(recipe.prepTime) min"
         return cell
     }
     

@@ -11,9 +11,11 @@ import UIKit
 class UISearchResultTableCell: UITableViewCell {
     
     //MARK: Properties
+    
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
     @IBOutlet weak var recipePrice: UILabel!
+    @IBOutlet weak var recipeTime: UILabel!
     
     var cellDelegate: MyCellProtocol?
     var pathHolder: Int = 0
