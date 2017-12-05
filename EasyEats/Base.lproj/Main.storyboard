@@ -260,7 +260,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="With filters: ">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="FISH&amp;CHIPS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -423,7 +423,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="243.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNf-tR-sw0">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNf-tR-sw0">
                                             <rect key="frame" x="16" y="11" width="343" height="222"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>

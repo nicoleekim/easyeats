@@ -101,7 +101,7 @@ class RecipePage: UITableViewController {
             var full_instuctions = "Instructions\n"
             
             for (index, instruction) in instructions.enumerated() {
-                full_instuctions += "\t\(index + 1). \(instruction)\n"
+                full_instuctions += "\(index + 1). \(instruction)\n"
             }
             
             cell.ingredientsLabel.text = full_instuctions
