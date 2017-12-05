@@ -40,6 +40,7 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
             (!isVegetarian || (isVegetarian == vegetarian)))
     }
     
+    
     // Reads JSON file
     func uploadRecipeData(file_name: String) -> [Recipe] {
         var recipes: [Recipe] = []
@@ -50,11 +51,11 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
             let data = try Data(contentsOf: url)
             let jsonResult = try JSONSerialization.jsonObject(with: data, options:
                 JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-            
+
             let jsonArray = jsonResult.value(forKey: "recipes") as! NSArray
             for json in jsonArray {
                 let tmp = (json as? [String: Any])!
-                
+
                 let name = tmp["recipe-name"] as? String
                 let vegan = tmp["vegan"] as? Bool
                 let vegetarian = tmp["vegetarian"] as? Bool
@@ -64,7 +65,7 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
                 let ingredients = tmp["ingredients"] as? [String]
                 let instructions = tmp["instructions"] as? [String]
                 let photoURL = tmp["photoURL"] as? String
-                
+
                 if simpleFilter(price: price!, time: prep_time!, vegan: vegan!, vegetarian: vegetarian!) {
                     let recipe = Recipe(name: name!,
                                         vegetarian: vegetarian!,
@@ -75,7 +76,7 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
                                         ingredients: ingredients!,
                                         instructions: instructions!,
                                         photoURL: photoURL!)
-                    
+
                     recipes.append(recipe!)
                 }
             }
@@ -83,6 +84,58 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
             print("Oh darn")
         }
         return recipes
+    }
+    
+    func getDetail(url_name: String, withCompletion completion: @escaping ([Recipe], Error?) -> Void) {
+        var recipes: [Recipe] = []
+        let jsonUrlString = "https://api.myjson.com/bins/18nz3b"
+        let url = URL(string: jsonUrlString)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data: Data?, response: URLResponse?, error: Error?) in
+            if error != nil {
+                completion([], error)
+                return
+            }
+            else if let data = data {
+                do {
+                    guard let jsonObj = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else {completion([], nil);return}
+                    if let jsonArray = jsonObj.value(forKey: "recipes") as? NSArray {
+                        for json in jsonArray {
+                            let tmp = (json as? [String: Any])!
+                            
+                            let name = tmp["recipe-name"] as? String
+                            let vegan = tmp["vegan"] as? Bool
+                            let vegetarian = tmp["vegetarian"] as? Bool
+                            let prep_time = tmp["prepTime"] as? Int
+                            let servings = tmp["servings"] as? Int
+                            let price = tmp["price"] as? Float
+                            let ingredients = tmp["ingredients"] as? [String]
+                            let instructions = tmp["instructions"] as? [String]
+                            let photoURL = tmp["photoURL"] as? String
+                            
+                            if self.simpleFilter(price: price!, time: prep_time!, vegan: vegan!, vegetarian: vegetarian!) {
+                                let recipe = Recipe(name: name!,
+                                                    vegetarian: vegetarian!,
+                                                    vegan: vegan!,
+                                                    prepTime: prep_time!,
+                                                    servings: servings!,
+                                                    price: price!,
+                                                    ingredients: ingredients!,
+                                                    instructions: instructions!,
+                                                    photoURL: photoURL!)
+                                
+                                recipes.append(recipe!)
+                            }
+                        }
+                    }
+                    completion(recipes, nil)
+                }
+                catch {
+                    completion([], error)
+                }
+            }
+        }
+        task.resume()
     }
     
     
@@ -104,18 +157,30 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
         // Read JSON file
         let file_name = "recipe-data"
         let recipes = uploadRecipeData(file_name: file_name)
+        var online_recipes = [Recipe]()
+        
+        // Read JSON online
+        let url = "https://api.myjson.com/bins/18nz3b"
+        getDetail(url_name: url, withCompletion: { detail, error in
+            if error != nil {
+                //handle error
+            } else {
+                online_recipes = detail
+            }
+        })
         
         // set variable in searchResultsTable
-        searchResultsTable.recipes = recipes
+        searchResultsTable.recipes = online_recipes
         
         //set variable as global
-        recipeHolder = recipes
+        recipeHolder = online_recipes
         // print(recipes)
         
         //set celldelgate in every cell in table
         setCellDelegate ()
         
-        recipeFoundNum.text = "\(recipes.count)"
+        recipeFoundNum.text = "\(online_recipes.count)"
+        print(online_recipes)
         
         // Do any additional setup after loading the view.
     }
