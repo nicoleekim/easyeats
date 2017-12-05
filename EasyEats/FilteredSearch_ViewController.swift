@@ -166,21 +166,25 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
                 //handle error
             } else {
                 online_recipes = detail
+                self.recipeHolder = detail
             }
         })
-        
-        // set variable in searchResultsTable
-        searchResultsTable.recipes = online_recipes
+        print(recipeHolder)
         
         //set variable as global
-        recipeHolder = online_recipes
+        recipeHolder = recipes
+        
+        // set variable in searchResultsTable
+        searchResultsTable.recipes = recipeHolder
+        
+        
         // print(recipes)
         
         //set celldelgate in every cell in table
         setCellDelegate ()
         
-        recipeFoundNum.text = "\(online_recipes.count)"
-        print(online_recipes)
+        recipeFoundNum.text = "\(recipeHolder.count)"
+        
         
         // Do any additional setup after loading the view.
     }
