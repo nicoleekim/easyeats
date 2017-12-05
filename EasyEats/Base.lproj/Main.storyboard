@@ -174,7 +174,6 @@
                                 <segue destination="2O6-vR-szk" kind="show" identifier="viewAll" id="mKI-G8-TVv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="FXP-dr-Rz1"/>
                     </navigationItem>
                     <connections>
                         <outlet property="priceOutlet" destination="tXq-gC-znT" id="ZX4-Tq-wYs"/>
