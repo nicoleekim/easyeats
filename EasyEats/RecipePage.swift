@@ -48,7 +48,12 @@ class RecipePage: UITableViewController {
             let price = String(describing: passedRecipes!.price)
             let time = String(describing: passedRecipes!.prepTime)
             cell.recipeName.text = passedRecipes?.name
-            cell.recipeImage.image = UIImage(named: passedRecipes!.name)
+            
+            let url = URL(string: passedRecipes!.photoURL)
+            let data = try? Data(contentsOf: url!)
+            cell.recipeImage.image = UIImage(data: data!)
+            
+//            cell.recipeImage.image = UIImage(named: passedRecipes!.name)
             cell.recipePriceandTime.text = "$\(price) recipe/\(time) minutes"
             return cell
         }
