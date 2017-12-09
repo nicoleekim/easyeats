@@ -32,7 +32,7 @@ class EasyEatsTests: XCTestCase {
         //Rank of prices: cheapDish (0.50), veganDish + longDish (2.00), vegetDish + shortDish (5.00), richDish (10.00)
         //Rank of prepTime: shortDish (15), veganDish + vegetDish + richDish (20), cheapDish (30), longDish (45)
         
-        veganDish = Recipe(name: "Vegan Dish", vegetarian: true, vegan: true, prepTime: 20, servings: 1, price: 2.00, ingredients: ["a"], instructions: ["a"], photoURL: "www.somesite.png")
+        veganDish = Recipe(name: "Vegan Dish", vegetarian: false, vegan: true, prepTime: 20, servings: 1, price: 2.00, ingredients: ["a"], instructions: ["a"], photoURL: "www.somesite.png")
         
         vegetDish = Recipe(name: "Veget Dish", vegetarian: true, vegan: false, prepTime: 20, servings: 1, price: 5.00, ingredients: ["a"], instructions: ["a"], photoURL: "www.somesite.png")
         
@@ -46,7 +46,7 @@ class EasyEatsTests: XCTestCase {
         
         recipeHolder = [veganDish, vegetDish, cheapDish, richDish, shortDish, longDish]
         
-        SUT = UIStoryboard(name: "MyStoryboard", bundle: Bundle(for: ViewController.self)).instantiateViewController(withIdentifier:String(describing: ViewController.self)) as! ViewController
+        SUT = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateViewController(withIdentifier:String(describing: ViewController.self)) as! ViewController
         let _ = SUT.view
  
     }
@@ -64,15 +64,19 @@ class EasyEatsTests: XCTestCase {
         filter = nil
     }
     
+    func testHelloWorld() {
+        let hello = "Hello World"
+        XCTAssertEqual(hello, "Hello World")
+    }
+    
     func testVeganFilter() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        
-        filter?.isVegan = true //looking for vegan recipes
-        filter?.isVegetarian = true
-        filter?.maxPrice = 50
-        filter?.maxTime = 60
+        // Initiate
+        filter = FilteredSearch_ViewController()
+        filter.isVegan = true //looking for vegan recipes
+        filter.isVegetarian = true
+        filter.maxPrice = 50
+        filter.maxTime = 60
+
         var data = [Recipe]()
         for recipe in recipeHolder {
             if filter!.simpleFilter(price: recipe.price, time: recipe.prepTime, vegan: recipe.vegan, vegetarian: recipe.vegetarian) {
@@ -84,6 +88,8 @@ class EasyEatsTests: XCTestCase {
     }
     
     func testVegetarianFilter() {
+        // Initiate
+        filter = FilteredSearch_ViewController()
         filter?.isVegetarian = true
         filter?.maxPrice = 50
         filter?.maxTime = 60
