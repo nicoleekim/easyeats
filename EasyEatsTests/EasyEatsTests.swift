@@ -83,7 +83,7 @@ class EasyEatsTests: XCTestCase {
                 data.append(recipe)
             }
         }
-        XCTAssertTrue(data.count == 1) //only one recipe was vegan
+        XCTAssertTrue(data.count == 1, "Only one recipe is vegan") //only one recipe was vegan
         
     }
     
@@ -99,14 +99,14 @@ class EasyEatsTests: XCTestCase {
                 data.append(recipe)
             }
         }
-        XCTAssertTrue(data.count == 1) //only one recipe was vegetarian
+        XCTAssertTrue(data.count == 1, "Only one recipe is vegetarian") //only one recipe was vegetarian
     }
     
     func testSegues() {
         let identifiers = segues(ofViewController: SUT)
         XCTAssertEqual(identifiers.count, 2, "Segue count should equal two.")
         XCTAssertTrue(identifiers.contains("segue"), "Segue segue should exist.")
-        XCTAssertTrue(identifiers.contains("ViewAll"), "Segue viewall should exist.")
+        XCTAssertTrue(identifiers.contains("viewAll"), "Segue viewall should exist.")
     }
     
     func segues(ofViewController viewController: UIViewController) -> [String] {
