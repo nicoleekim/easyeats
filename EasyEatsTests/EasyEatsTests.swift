@@ -11,6 +11,8 @@ import XCTest
 
 class EasyEatsTests: XCTestCase {
     
+    var SUT: ViewController!
+    
     var recipeHolder = [Recipe]() //need a container to run filters on
 
     var veganDish:Recipe! //clear labels for purpose of each dish
@@ -43,6 +45,9 @@ class EasyEatsTests: XCTestCase {
         longDish = Recipe(name: "Long Dish", vegetarian: false, vegan: false, prepTime: 45, servings: 1, price: 2.00, ingredients: ["a"], instructions: ["a"], photoURL: "www.somesite.png")
         
         recipeHolder = [veganDish, vegetDish, cheapDish, richDish, shortDish, longDish]
+        
+        SUT = UIStoryboard(name: "MyStoryboard", bundle: Bundle(for: ViewController.self)).instantiateViewController(withIdentifier:String(describing: ViewController.self)) as! ViewController
+        let _ = SUT.view
  
     }
     
@@ -77,9 +82,32 @@ class EasyEatsTests: XCTestCase {
         XCTAssertTrue(data.count == 1) //only one recipe was vegan
         
     }
+    
+    func testVegetarianFilter() {
+        filter?.isVegetarian = true
+        filter?.maxPrice = 50
+        filter?.maxTime = 60
+        var data = [Recipe]()
+        for recipe in recipeHolder {
+            if filter!.simpleFilter(price: recipe.price, time: recipe.prepTime, vegan: recipe.vegan, vegetarian: recipe.vegetarian) {
+                data.append(recipe)
+            }
+        }
+        XCTAssertTrue(data.count == 1) //only one recipe was vegetarian
+    }
+    
+    func testSegues() {
+        let identifiers = segues(ofViewController: SUT)
+        XCTAssertEqual(identifiers.count, 2, "Segue count should equal two.")
+        XCTAssertTrue(identifiers.contains("segue"), "Segue segue should exist.")
+        XCTAssertTrue(identifiers.contains("ViewAll"), "Segue viewall should exist.")
+    }
+    
+    func segues(ofViewController viewController: UIViewController) -> [String] {
+        let identifiers = (viewController.value(forKey: "storyboardSegueTemplates") as? [AnyObject])?.flatMap({ $0.value(forKey: "identifier") as? String }) ?? []
+        return identifiers
+    }
  
-    
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

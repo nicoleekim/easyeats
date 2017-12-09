@@ -165,7 +165,6 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
             if error != nil {
                 //handle error
             } else {
-                online_recipes = detail
                 self.recipeHolder = detail
             }
         })
