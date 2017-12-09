@@ -12,6 +12,7 @@ import XCTest
 class EasyEatsTests: XCTestCase {
     
     var SUT: ViewController!
+    var SUT2: FilteredSearch_ViewController!
     
     var recipeHolder = [Recipe]() //need a container to run filters on
 
@@ -47,7 +48,9 @@ class EasyEatsTests: XCTestCase {
         recipeHolder = [veganDish, vegetDish, cheapDish, richDish, shortDish, longDish]
         
         SUT = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self)).instantiateViewController(withIdentifier:String(describing: ViewController.self)) as! ViewController
+        SUT2 = UIStoryboard(name: "Main", bundle: Bundle(for: FilteredSearch_ViewController.self)).instantiateViewController(withIdentifier:String(describing: FilteredSearch_ViewController.self)) as! FilteredSearch_ViewController
         let _ = SUT.view
+        let _ = SUT2.view
  
     }
     
@@ -62,53 +65,73 @@ class EasyEatsTests: XCTestCase {
         longDish = nil
         recipeHolder = []
         filter = nil
+        SUT = nil
+        SUT2 = nil
     }
     
-    func testHelloWorld() {
-        let hello = "Hello World"
-        XCTAssertEqual(hello, "Hello World")
-    }
+    /*
+     ###################
+     Unit tests
+     ###################
+     */
     
+    // Tests the vegan attribute in simpleFilter
     func testVeganFilter() {
-        // Initiate
-        filter = FilteredSearch_ViewController()
-        filter.isVegan = true //looking for vegan recipes
-        filter.isVegetarian = true
-        filter.maxPrice = 50
-        filter.maxTime = 60
-
-        var data = [Recipe]()
+        // Test when vegan flag is true
+        helperFilterCreation(vegan: true)
+        var vegan_data = [Recipe]()
         for recipe in recipeHolder {
             if filter!.simpleFilter(price: recipe.price, time: recipe.prepTime, vegan: recipe.vegan, vegetarian: recipe.vegetarian) {
-                data.append(recipe)
+                vegan_data.append(recipe)
             }
         }
-        XCTAssertTrue(data.count == 1, "Only one recipe is vegan") //only one recipe was vegan
-        
+        XCTAssertTrue(vegan_data.count == 1, "Only one recipe is vegan")
     }
     
+    // Tests the vegetarian attribute in simpleFilter
     func testVegetarianFilter() {
-        // Initiate
-        filter = FilteredSearch_ViewController()
-        filter?.isVegetarian = true
-        filter?.maxPrice = 50
-        filter?.maxTime = 60
-        var data = [Recipe]()
+        // Test when vegetarian flag is true
+        helperFilterCreation(vegetarian: true)
+        var vegetarian_data = [Recipe]()
         for recipe in recipeHolder {
             if filter!.simpleFilter(price: recipe.price, time: recipe.prepTime, vegan: recipe.vegan, vegetarian: recipe.vegetarian) {
-                data.append(recipe)
+                vegetarian_data.append(recipe)
             }
         }
-        XCTAssertTrue(data.count == 1, "Only one recipe is vegetarian") //only one recipe was vegetarian
+        XCTAssertTrue(vegetarian_data.count == 1, "Only one recipe is vegetarian")
     }
     
-    func testSegues() {
+    // Test segue for ViewController
+    func testSegueExistsForViewController() {
         let identifiers = segues(ofViewController: SUT)
         XCTAssertEqual(identifiers.count, 2, "Segue count should equal two.")
-        XCTAssertTrue(identifiers.contains("segue"), "Segue segue should exist.")
-        XCTAssertTrue(identifiers.contains("viewAll"), "Segue viewall should exist.")
+        XCTAssertTrue(identifiers.contains("segue"), "Segue identifier \'segue\' should exist.")
+        XCTAssertTrue(identifiers.contains("viewAll"), "Segue identifier \'viewall\' should exist.")
     }
     
+    // Test segue for FilteredSearch_ViewController
+    func testSegueExistsForFilteredSearch_ViewController() {
+        let identifiers = segues(ofViewController: SUT2)
+        XCTAssertEqual(identifiers.count, 1, "Segue count should equal one.")
+        XCTAssertTrue(identifiers.contains("goToRecipeSegue"), "Segue identifier \'goToRecipeSegue\' should exist.")
+    }
+    
+    /*
+     ###################
+     Helper Methods
+     ###################
+     */
+    
+    // Helper method that initiates FilteredSearch_ViewController's attributes
+    func helperFilterCreation(vegan: Bool = false, vegetarian: Bool = false, max_price: Int = 99999, max_time: Int = 99999) {
+        filter = FilteredSearch_ViewController()
+        filter.isVegan = vegan
+        filter?.isVegetarian = vegetarian
+        filter?.maxPrice = max_price
+        filter?.maxTime = max_time
+    }
+    
+    // Helper method returning identifiers for segue
     func segues(ofViewController viewController: UIViewController) -> [String] {
         let identifiers = (viewController.value(forKey: "storyboardSegueTemplates") as? [AnyObject])?.flatMap({ $0.value(forKey: "identifier") as? String }) ?? []
         return identifiers
