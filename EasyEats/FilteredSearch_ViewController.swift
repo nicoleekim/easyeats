@@ -154,52 +154,46 @@ class FilteredSearch_ViewController: UIViewController, MyCellProtocol {
         vegetarianLabel.textColor = isVegetarian ? UIColor.black : UIColor.lightGray
         vegetarianLabel.text = isVegetarian ? "Vegetarian On" : "Vegetarian Off"
         
-        // Read JSON file
-        let file_name = "recipe-data"
-        let recipes = uploadRecipeData(file_name: file_name)
-        var online_recipes = [Recipe]()
         
-        // Read JSON online
+        // VERSION1: Read locally
+//        let file_name = "recipe-data"
+//        let recipes = uploadRecipeData(file_name: file_name)
+//        searchResultsTable.recipes = recipes
+//        searchResultsTable.populateRecipes(tmp: self)
+//        recipeFoundNum.text = "\(searchResultsTable.recipes.count)"
+        
+//        // VERSION2: Read JSON online
         let url = "https://api.myjson.com/bins/18nz3b"
         getDetail(url_name: url, withCompletion: { detail, error in
             if error != nil {
                 //handle error
+                self.searchResultsTable.readError = true
             } else {
                 self.recipeHolder = detail
+                self.searchResultsTable.recipes = detail
+                self.searchResultsTable.recipesGiven = true
             }
         })
-        print(recipeHolder)
-        
-        //set variable as global
-        recipeHolder = recipes
-        
-        // set variable in searchResultsTable
-        searchResultsTable.recipes = recipeHolder
-        
-        
-        // print(recipes)
-        
-        //set celldelgate in every cell in table
-        setCellDelegate ()
-        
-        recipeFoundNum.text = "\(recipeHolder.count)"
-        
-        
-        // Do any additional setup after loading the view.
+
+        while (true) {
+            if (searchResultsTable.readError) {
+                return
+            } else if (searchResultsTable.recipesGiven) {
+                searchResultsTable.populateRecipes(tmp: self)
+                recipeFoundNum.text = "\(searchResultsTable.recipes.count)"
+                return
+            } else {
+                sleep(1)
+                print("Waiting")
+            }
+            
+        }
     }
 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func setCellDelegate () {
-        let cells = searchResultsTable.visibleCells as! Array<UISearchResultTableCell>
-        
-        for cell in cells {
-            cell.cellDelegate = self
-        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

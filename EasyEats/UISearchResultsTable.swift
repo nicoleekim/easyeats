@@ -12,6 +12,8 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
     
     var cellDelegate: MyCellProtocol?
     var recipes = [Recipe]()
+    var recipesGiven = false
+    var readError = false
     
     //UITableViewDataSource Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,6 +42,14 @@ class UISearchResultsTable: UITableView, UITableViewDataSource, UITableViewDeleg
         cell.recipePrice.text = "Cost: $\(recipe.price)"
         cell.recipeTime.text = "Prep time: \(recipe.prepTime) min"
         return cell
+    }
+    
+    func populateRecipes(tmp: FilteredSearch_ViewController) {
+        let cells = visibleCells as! Array<UISearchResultTableCell>
+        for cell in cells {
+            cell.cellDelegate = tmp
+        }
+        
     }
     
     //End datasource methods
